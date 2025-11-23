@@ -17,7 +17,7 @@ namespace Projeto_Modelo_C_Sharp
         public Form_Consulta_Cliente()
         {
             InitializeComponent();
-            dgvPesquisa.AutoGenerateColumns = false;
+            dgvPesquisa.AutoGenerateColumns = true;
             CarregarGrid();
         }
 
@@ -30,7 +30,44 @@ namespace Projeto_Modelo_C_Sharp
         {
             daoCliente daocliente = new daoCliente();
             Dto_ColecaoCliente colecaocliente = daocliente.Select_Geral();
+
+            dgvPesquisa.AutoGenerateColumns = false;
+            dgvPesquisa.Columns.Clear();
+
+            dgvPesquisa.Columns.Add(new DataGridViewTextBoxColumn()
+            {
+                HeaderText = "Nome do cliente",
+                DataPropertyName = "nome",
+                Name = "nome"
+            });
+            dgvPesquisa.Columns.Add(new DataGridViewTextBoxColumn()
+            {
+                HeaderText = "Endereço",
+                DataPropertyName = "endereco",
+                Name = "endereco"
+            });
+            dgvPesquisa.Columns.Add(new DataGridViewTextBoxColumn()
+            {
+                HeaderText = "Telefone",
+                DataPropertyName = "telefone",
+                Name = "telefone"
+            });
+            dgvPesquisa.Columns.Add(new DataGridViewTextBoxColumn()
+            {
+                HeaderText = "Status",
+                DataPropertyName = "status",
+                Name = "status"
+            });
+            dgvPesquisa.Columns.Add(new DataGridViewTextBoxColumn()
+            {
+                HeaderText = "Limite de crédito",
+                DataPropertyName = "limite_credito",
+                Name = "limite_credito"
+            });
+
             dgvPesquisa.DataSource = colecaocliente;
         }
+
+
     }
 }

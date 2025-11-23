@@ -68,8 +68,11 @@ namespace Projeto_Modelo_C_Sharp.DAO
                     Cliente.endereco = item["endereco"].ToString();
                     Cliente.telefone = item["telefone"].ToString();
                     Cliente.status = item["status"].ToString();
-                    Cliente.limite_credito = decimal.Parse((string)item["limite_credito"]);
+                    Cliente.limite_credito = Convert.ToDecimal(item["limite_credito"]);
+
+                    colecaoCliente.Add(Cliente);
                 }
+
                 return colecaoCliente;
             }
             catch (Exception ex)
