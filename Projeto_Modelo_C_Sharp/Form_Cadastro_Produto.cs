@@ -32,11 +32,22 @@ namespace Projeto_Modelo_C_Sharp
         {
             if (cmbCategoria.SelectedValue != null)
             {
-                int idSelecionado = (int)cmbCategoria.SelectedValue;
-                string nomeSelecionado = cmbCategoria.Text;
+                int idCategoriaSelecionada;
 
-                // Aqui você pode usar os valores selecionados
-                Console.WriteLine($"Selecionado: {nomeSelecionado} ({idSelecionado})");
+                // Tenta converter com segurança
+                if (int.TryParse(cmbCategoria.SelectedValue.ToString(), out idCategoriaSelecionada))
+                {
+                    DtoProduto dtoProduto = new DtoProduto();
+                    dtoProduto.id_categoria = idCategoriaSelecionada;
+                }
+                else
+                {
+                    MessageBox.Show("Erro ao ler o ID da categoria.");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Nenhuma categoria selecionada.");
             }
         }
 
