@@ -115,19 +115,5 @@ namespace Projeto_Modelo_C_Sharp
             objfrmrelatorio.MdiParent = this;
             objfrmrelatorio.Show();
         }
-
-        private void editaProdutoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form_Editar_Produto objfrmeditarproduto = new Form_Editar_Produto();
-            objfrmeditarproduto.MdiParent = this;
-            objfrmeditarproduto.Show();
-        }
-
-        private void editaPedidoToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            Form_Editar_Pedido objfrmeditarpedido = new Form_Editar_Pedido();
-            objfrmeditarpedido.MdiParent = this;
-            objfrmeditarpedido.Show();
-        }
     }
 }
