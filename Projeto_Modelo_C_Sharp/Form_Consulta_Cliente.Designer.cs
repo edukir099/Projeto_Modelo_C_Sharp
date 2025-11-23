@@ -29,19 +29,19 @@
         private void InitializeComponent()
         {
             this.lblText = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvPesquisa = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rdoOrdenarEmail = new System.Windows.Forms.RadioButton();
             this.rdoOrdenarNome = new System.Windows.Forms.RadioButton();
             this.btnFinalizar = new System.Windows.Forms.Button();
             this.txtNomeUsuario = new System.Windows.Forms.TextBox();
             this.lblNomeUsuario = new System.Windows.Forms.Label();
             this.btnVoltar = new System.Windows.Forms.Button();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisa)).BeginInit();
             this.SuspendLayout();
             // 
             // lblText
@@ -54,21 +54,47 @@
             this.lblText.TabIndex = 0;
             this.lblText.Text = "Consulta de cliente";
             // 
-            // dataGridView1
+            // dgvPesquisa
             // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvPesquisa.AllowUserToOrderColumns = true;
+            this.dgvPesquisa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPesquisa.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column4,
             this.Column5});
-            this.dataGridView1.Location = new System.Drawing.Point(15, 123);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.dataGridView1.Size = new System.Drawing.Size(642, 235);
-            this.dataGridView1.TabIndex = 12;
+            this.dgvPesquisa.Location = new System.Drawing.Point(15, 123);
+            this.dgvPesquisa.Name = "dgvPesquisa";
+            this.dgvPesquisa.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.dgvPesquisa.Size = new System.Drawing.Size(642, 235);
+            this.dgvPesquisa.TabIndex = 12;
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "Nome do cliente";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 200;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Endereco";
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Telefone";
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Status";
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Limite de crédito";
+            this.Column5.Name = "Column5";
             // 
             // rdoOrdenarEmail
             // 
@@ -126,32 +152,7 @@
             this.btnVoltar.TabIndex = 19;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "Nome do cliente";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 200;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Endereco";
-            this.Column2.Name = "Column2";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Telefone";
-            this.Column3.Name = "Column3";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Status";
-            this.Column4.Name = "Column4";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Limite de crédito";
-            this.Column5.Name = "Column5";
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // Form_Consulta_Cliente
             // 
@@ -159,7 +160,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(672, 440);
             this.Controls.Add(this.btnVoltar);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvPesquisa);
             this.Controls.Add(this.rdoOrdenarEmail);
             this.Controls.Add(this.rdoOrdenarNome);
             this.Controls.Add(this.btnFinalizar);
@@ -168,7 +169,7 @@
             this.Controls.Add(this.lblText);
             this.Name = "Form_Consulta_Cliente";
             this.Text = "Form_Consulta_Cliente";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisa)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -177,7 +178,7 @@
         #endregion
 
         private System.Windows.Forms.Label lblText;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvPesquisa;
         private System.Windows.Forms.RadioButton rdoOrdenarEmail;
         private System.Windows.Forms.RadioButton rdoOrdenarNome;
         private System.Windows.Forms.Button btnFinalizar;
