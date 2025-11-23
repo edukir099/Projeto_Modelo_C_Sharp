@@ -257,6 +257,7 @@
             this.editaProdutoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.U)));
             this.editaProdutoToolStripMenuItem.Size = new System.Drawing.Size(208, 24);
             this.editaProdutoToolStripMenuItem.Text = "Edita produto";
+            this.editaProdutoToolStripMenuItem.Click += new System.EventHandler(this.editaProdutoToolStripMenuItem_Click);
             // 
             // toolStripMenuItem8
             // 
@@ -337,6 +338,7 @@
             this.editaPedidoToolStripMenuItem.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.I)));
             this.editaPedidoToolStripMenuItem.Size = new System.Drawing.Size(194, 24);
             this.editaPedidoToolStripMenuItem.Text = "Edita pedido";
+            this.editaPedidoToolStripMenuItem.Click += new System.EventHandler(this.editaPedidoToolStripMenuItem_Click);
             // 
             // Form_Principal
             // 
