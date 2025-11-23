@@ -98,7 +98,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DAO\daoCategoria.cs" />
+    <Compile Include="DAO\daoCliente.cs" />
+    <Compile Include="DAO\daoPedido.cs" />
+    <Compile Include="DAO\daoProduto.cs" />
     <Compile Include="DAO\MySQL_Conexao.cs" />
+    <Compile Include="DTO\DtoCategoria.cs" />
+    <Compile Include="DTO\DtoCliente.cs" />
+    <Compile Include="DTO\DtoPedido.cs" />
+    <Compile Include="DTO\DtoPedidoItem.cs" />
+    <Compile Include="DTO\DtoProduto.cs" />
+    <Compile Include="DTO\Dto_ColecaoCategoria.cs" />
+    <Compile Include="DTO\Dto_ColecaoCliente.cs" />
+    <Compile Include="DTO\Dto_ColecaoProduto.cs" />
     <Compile Include="Form_Consulta_Pedido.cs">
       <SubType>Form</SubType>
     </Compile>
