@@ -37,7 +37,7 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtPreco = new System.Windows.Forms.TextBox();
             this.btnVoltar = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbCategoria = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lblText
@@ -122,20 +122,20 @@
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
             // 
-            // comboBox1
+            // cmbCategoria
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(36, 219);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(295, 21);
-            this.comboBox1.TabIndex = 10;
+            this.cmbCategoria.FormattingEnabled = true;
+            this.cmbCategoria.Location = new System.Drawing.Point(38, 214);
+            this.cmbCategoria.Name = "cmbCategoria";
+            this.cmbCategoria.Size = new System.Drawing.Size(202, 21);
+            this.cmbCategoria.TabIndex = 10;
             // 
             // Form_Cadastro_Produto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(373, 337);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.cmbCategoria);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.txtPreco);
             this.Controls.Add(this.txtNome);
@@ -163,6 +163,6 @@
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtPreco;
         private System.Windows.Forms.Button btnVoltar;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbCategoria;
     }
 }
