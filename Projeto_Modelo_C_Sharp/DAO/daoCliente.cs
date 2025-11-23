@@ -62,13 +62,13 @@ namespace Projeto_Modelo_C_Sharp.DAO
 
                 foreach (DataRow item in dt.Rows)
                 {
-                    DtoCategoria Categoria = new DtoCategoria();
-                    Categoria.id_categoria = Convert.ToInt32(item["id_cliente"]);
-                    Categoria.nome = item["nome"].ToString();
-                    Categoria.nome = item["endereco"].ToString();
-                    Categoria.nome = item["telefone"].ToString();
-                    Categoria.nome = item["status"].ToString();
-                    Categoria.nome = item["limite_credito"].ToString();
+                    DtoCliente Cliente = new DtoCliente();
+                    Cliente.id_cliente = Convert.ToInt32(item["id_cliente"]);
+                    Cliente.nome = item["nome"].ToString();
+                    Cliente.nome = item["endereco"].ToString();
+                    Cliente.nome = item["telefone"].ToString();
+                    Cliente.nome = item["status"].ToString();
+                    Cliente.nome = item["limite_credito"].ToString();
                 }
                 return colecaoCliente;
             }

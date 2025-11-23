@@ -251,6 +251,7 @@
             this.comboBoxCliente.Name = "comboBoxCliente";
             this.comboBoxCliente.Size = new System.Drawing.Size(121, 21);
             this.comboBoxCliente.TabIndex = 32;
+            this.comboBoxCliente.SelectedIndexChanged += new System.EventHandler(this.comboBoxCliente_SelectedIndexChanged);
             // 
             // comboBoxCategoria
             // 
@@ -292,6 +293,7 @@
             this.Controls.Add(this.lblText);
             this.Name = "Form_Cadastro_Pedido";
             this.Text = "Form_Pedido";
+            this.Load += new System.EventHandler(this.Form_Cadastro_Pedido_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.ResumeLayout(false);
