@@ -31,10 +31,10 @@
             this.lblText = new System.Windows.Forms.Label();
             this.lblNome_Cliente = new System.Windows.Forms.Label();
             this.lblEndereco_Cliente = new System.Windows.Forms.Label();
-            this.lblCelular_Cliente = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.lblTelefone_Cliente = new System.Windows.Forms.Label();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtEndereco = new System.Windows.Forms.TextBox();
+            this.txtTelefone = new System.Windows.Forms.TextBox();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.SuspendLayout();
@@ -69,36 +69,36 @@
             this.lblEndereco_Cliente.TabIndex = 2;
             this.lblEndereco_Cliente.Text = "Endereço de cliente";
             // 
-            // lblCelular_Cliente
+            // lblTelefone_Cliente
             // 
-            this.lblCelular_Cliente.AutoSize = true;
-            this.lblCelular_Cliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCelular_Cliente.Location = new System.Drawing.Point(36, 200);
-            this.lblCelular_Cliente.Name = "lblCelular_Cliente";
-            this.lblCelular_Cliente.Size = new System.Drawing.Size(88, 13);
-            this.lblCelular_Cliente.TabIndex = 3;
-            this.lblCelular_Cliente.Text = "Celular do cliente";
+            this.lblTelefone_Cliente.AutoSize = true;
+            this.lblTelefone_Cliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefone_Cliente.Location = new System.Drawing.Point(36, 200);
+            this.lblTelefone_Cliente.Name = "lblTelefone_Cliente";
+            this.lblTelefone_Cliente.Size = new System.Drawing.Size(98, 13);
+            this.lblTelefone_Cliente.TabIndex = 3;
+            this.lblTelefone_Cliente.Text = "Telefone do cliente";
             // 
-            // textBox1
+            // txtNome
             // 
-            this.textBox1.Location = new System.Drawing.Point(40, 90);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(283, 20);
-            this.textBox1.TabIndex = 4;
+            this.txtNome.Location = new System.Drawing.Point(40, 90);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(283, 20);
+            this.txtNome.TabIndex = 4;
             // 
-            // textBox2
+            // txtEndereco
             // 
-            this.textBox2.Location = new System.Drawing.Point(39, 154);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(283, 20);
-            this.textBox2.TabIndex = 5;
+            this.txtEndereco.Location = new System.Drawing.Point(39, 154);
+            this.txtEndereco.Name = "txtEndereco";
+            this.txtEndereco.Size = new System.Drawing.Size(283, 20);
+            this.txtEndereco.TabIndex = 5;
             // 
-            // textBox3
+            // txtTelefone
             // 
-            this.textBox3.Location = new System.Drawing.Point(39, 216);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(283, 20);
-            this.textBox3.TabIndex = 6;
+            this.txtTelefone.Location = new System.Drawing.Point(39, 216);
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.Size = new System.Drawing.Size(283, 20);
+            this.txtTelefone.TabIndex = 6;
             // 
             // btnSalvar
             // 
@@ -109,6 +109,7 @@
             this.btnSalvar.TabIndex = 7;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnVoltar
             // 
@@ -119,6 +120,7 @@
             this.btnVoltar.TabIndex = 19;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
             // Form_Cadastro_Cliente
             // 
@@ -127,10 +129,10 @@
             this.ClientSize = new System.Drawing.Size(361, 344);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnSalvar);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.lblCelular_Cliente);
+            this.Controls.Add(this.txtTelefone);
+            this.Controls.Add(this.txtEndereco);
+            this.Controls.Add(this.txtNome);
+            this.Controls.Add(this.lblTelefone_Cliente);
             this.Controls.Add(this.lblEndereco_Cliente);
             this.Controls.Add(this.lblNome_Cliente);
             this.Controls.Add(this.lblText);
@@ -146,10 +148,10 @@
         private System.Windows.Forms.Label lblText;
         private System.Windows.Forms.Label lblNome_Cliente;
         private System.Windows.Forms.Label lblEndereco_Cliente;
-        private System.Windows.Forms.Label lblCelular_Cliente;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label lblTelefone_Cliente;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtEndereco;
+        private System.Windows.Forms.TextBox txtTelefone;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Button btnVoltar;
     }
