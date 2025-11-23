@@ -74,7 +74,6 @@ namespace Projeto_Modelo_C_Sharp.DAO
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
             finally
