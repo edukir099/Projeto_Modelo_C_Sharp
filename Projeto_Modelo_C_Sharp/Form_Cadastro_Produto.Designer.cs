@@ -36,8 +36,8 @@
             this.lblText5 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.btnVoltar = new System.Windows.Forms.Button();
+            this.textBox3 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblText
@@ -112,13 +112,6 @@
             this.textBox2.Size = new System.Drawing.Size(296, 20);
             this.textBox2.TabIndex = 7;
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(36, 214);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(296, 20);
-            this.textBox3.TabIndex = 8;
-            // 
             // btnVoltar
             // 
             this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -128,6 +121,13 @@
             this.btnVoltar.TabIndex = 9;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(36, 214);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(296, 20);
+            this.textBox3.TabIndex = 8;
             // 
             // Form_Cadastro_Produto
             // 
@@ -161,7 +161,7 @@
         private System.Windows.Forms.Label lblText5;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
         private System.Windows.Forms.Button btnVoltar;
+        private System.Windows.Forms.TextBox textBox3;
     }
 }
