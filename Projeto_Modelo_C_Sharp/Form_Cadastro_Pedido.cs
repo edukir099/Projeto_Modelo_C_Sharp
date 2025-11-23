@@ -45,9 +45,38 @@ namespace Projeto_Modelo_C_Sharp
                 Console.WriteLine($"Cliente selecionado: {idClienteSelecionado}");
             }
         }
+        private void ConfigurarDgvProdutoSelecionado()
+        {
+
+            // Limpa colunas existentes
+            dgvProdutoSelecionado.Columns.Clear();
+
+            // Adiciona colunas com nomes corretos (Name) e títulos (HeaderText)
+            dgvProdutoSelecionado.Columns.Add("colId", "ID");
+            dgvProdutoSelecionado.Columns.Add("colNome", "Nome");
+            dgvProdutoSelecionado.Columns.Add("colPreco", "Preço");
+            dgvProdutoSelecionado.Columns.Add("colQtd", "Quantidade");
+            dgvProdutosPedido.Columns.Clear();
+            dgvProdutosPedido.Columns.Add("colIdProduto", "ID");
+            dgvProdutosPedido.Columns["colIdProduto"].Visible = false; // id não precisa aparecer
+            dgvProdutosPedido.Columns.Add("colNome", "Nome");
+            dgvProdutosPedido.Columns.Add("colQtdPed", "Quantidade");
+            dgvProdutosPedido.Columns.Add("colPreco", "Preço");
+            dgvProdutosPedido.Columns.Add("colTotal", "Total");
+
+            // Configura para não permitir adicionar linhas pelo usuário
+            dgvProdutoSelecionado.AllowUserToAddRows = false;
+
+            // Configura seleção inteira da linha
+            dgvProdutoSelecionado.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+        }
+
+
 
         private void Form_Cadastro_Pedido_Load(object sender, EventArgs e)
         {
+            ConfigurarDgvProdutoSelecionado();
+
             var clientes = daoCliente.Select_Geral();
 
             comboBoxCliente.SelectedIndexChanged -= comboBoxCliente_SelectedIndexChanged;
@@ -88,6 +117,8 @@ namespace Projeto_Modelo_C_Sharp
             // Limpar DataGridViews
             dgvProdutoSelecionado.Rows.Clear();
             dgvProdutosPedido.Rows.Clear();
+
+
         }
 
         private void comboBoxCategoria_SelectedIndexChanged(object sender, EventArgs e)
@@ -133,12 +164,14 @@ namespace Projeto_Modelo_C_Sharp
         {
             if (e.RowIndex < 0) return;
 
+            int idProduto = Convert.ToInt32(dgvProdutoSelecionado.Rows[e.RowIndex].Cells["colId"].Value);
             string nome = dgvProdutoSelecionado.Rows[e.RowIndex].Cells[1].Value.ToString();
             int quantidade = int.Parse(dgvProdutoSelecionado.Rows[e.RowIndex].Cells[3].Value.ToString());
             decimal preco = decimal.Parse(dgvProdutoSelecionado.Rows[e.RowIndex].Cells[2].Value.ToString());
             decimal total = preco * quantidade;
 
             dgvProdutosPedido.Rows.Add(
+                idProduto,
                 nome,
                 quantidade,
                 preco,
@@ -178,8 +211,8 @@ namespace Projeto_Modelo_C_Sharp
                     {
                         if (row.IsNewRow) continue;
 
-                        int idProduto = Convert.ToInt32(row.Cells["colId"].Value);
-                        int quantidade = Convert.ToInt32(row.Cells["colQtd"].Value);
+                        int idProduto = Convert.ToInt32(row.Cells["colIdProduto"].Value);
+                        int quantidade = Convert.ToInt32(row.Cells["colQtdPed"].Value);
 
                         using (MySqlCommand cmd = new MySqlCommand("AdicionarItem", cn))
                         {

@@ -32,7 +32,9 @@ namespace Projeto_Modelo_C_Sharp.DAO
                     cmd.CommandType = CommandType.StoredProcedure;
 
                     // Parâmetros da procedure
-                    cmd.Parameters.AddWithValue("p_idCliente", pedido.id_cliente);                    
+                    cmd.Parameters.AddWithValue("p_idCliente", pedido.id_cliente);
+                    cmd.Parameters.AddWithValue("p_data", pedido.data);
+
 
                     // Parâmetro de saída (OUT)
                     MySqlParameter outParam = new MySqlParameter("p_idPedido", MySqlDbType.Int32);
