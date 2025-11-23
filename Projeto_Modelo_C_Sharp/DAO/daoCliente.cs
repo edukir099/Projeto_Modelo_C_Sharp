@@ -65,10 +65,10 @@ namespace Projeto_Modelo_C_Sharp.DAO
                     DtoCliente Cliente = new DtoCliente();
                     Cliente.id_cliente = Convert.ToInt32(item["id_cliente"]);
                     Cliente.nome = item["nome"].ToString();
-                    Cliente.nome = item["endereco"].ToString();
-                    Cliente.nome = item["telefone"].ToString();
-                    Cliente.nome = item["status"].ToString();
-                    Cliente.nome = item["limite_credito"].ToString();
+                    Cliente.endereco = item["endereco"].ToString();
+                    Cliente.telefone = item["telefone"].ToString();
+                    Cliente.status = item["status"].ToString();
+                    Cliente.limite_credito = decimal.Parse((string)item["limite_credito"]);
                 }
                 return colecaoCliente;
             }
