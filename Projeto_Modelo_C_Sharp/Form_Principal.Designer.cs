@@ -43,12 +43,12 @@
             this.clienteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
             this.pedidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem28 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem29 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem28 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem29 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem19 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem20 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem21 = new System.Windows.Forms.ToolStripMenuItem();
@@ -187,6 +187,30 @@
             this.pedidoToolStripMenuItem.Text = "Pedido";
             this.pedidoToolStripMenuItem.Click += new System.EventHandler(this.pedidocadToolStripMenuItem_Click);
             // 
+            // toolStripMenuItem28
+            // 
+            this.toolStripMenuItem28.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem29});
+            this.toolStripMenuItem28.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.toolStripMenuItem28.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.toolStripMenuItem28.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem28.Image")));
+            this.toolStripMenuItem28.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripMenuItem28.Name = "toolStripMenuItem28";
+            this.toolStripMenuItem28.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
+            | System.Windows.Forms.Keys.R)));
+            this.toolStripMenuItem28.Size = new System.Drawing.Size(97, 23);
+            this.toolStripMenuItem28.Text = "Relatórios";
+            // 
+            // toolStripMenuItem29
+            // 
+            this.toolStripMenuItem29.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem29.Image")));
+            this.toolStripMenuItem29.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.toolStripMenuItem29.Name = "toolStripMenuItem29";
+            this.toolStripMenuItem29.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.R)));
+            this.toolStripMenuItem29.Size = new System.Drawing.Size(242, 24);
+            this.toolStripMenuItem29.Text = "Relatório de vendas";
+            this.toolStripMenuItem29.Click += new System.EventHandler(this.relatoriovenToolStripMenuItem29_Click);
+            // 
             // toolStripMenuItem5
             // 
             this.toolStripMenuItem5.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -233,30 +257,6 @@
             this.toolStripMenuItem8.Size = new System.Drawing.Size(209, 24);
             this.toolStripMenuItem8.Text = "Pedido";
             this.toolStripMenuItem8.Click += new System.EventHandler(this.pedidoconToolStripMenuItem8_Click);
-            // 
-            // toolStripMenuItem28
-            // 
-            this.toolStripMenuItem28.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem29});
-            this.toolStripMenuItem28.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.toolStripMenuItem28.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.toolStripMenuItem28.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem28.Image")));
-            this.toolStripMenuItem28.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripMenuItem28.Name = "toolStripMenuItem28";
-            this.toolStripMenuItem28.ShortcutKeys = ((System.Windows.Forms.Keys)(((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.Shift) 
-            | System.Windows.Forms.Keys.R)));
-            this.toolStripMenuItem28.Size = new System.Drawing.Size(97, 23);
-            this.toolStripMenuItem28.Text = "Relatórios";
-            // 
-            // toolStripMenuItem29
-            // 
-            this.toolStripMenuItem29.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem29.Image")));
-            this.toolStripMenuItem29.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripMenuItem29.Name = "toolStripMenuItem29";
-            this.toolStripMenuItem29.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.R)));
-            this.toolStripMenuItem29.Size = new System.Drawing.Size(242, 24);
-            this.toolStripMenuItem29.Text = "Relatório de vendas";
-            this.toolStripMenuItem29.Click += new System.EventHandler(this.relatoriovenToolStripMenuItem29_Click);
             // 
             // toolStripMenuItem19
             // 
