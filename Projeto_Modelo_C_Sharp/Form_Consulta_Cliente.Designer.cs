@@ -30,17 +30,17 @@
         {
             this.lblText = new System.Windows.Forms.Label();
             this.dgvPesquisa = new System.Windows.Forms.DataGridView();
+            this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.endereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.limete_credito = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rdoOrdenarEmail = new System.Windows.Forms.RadioButton();
             this.rdoOrdenarNome = new System.Windows.Forms.RadioButton();
             this.btnFinalizar = new System.Windows.Forms.Button();
             this.txtNomeUsuario = new System.Windows.Forms.TextBox();
             this.lblNomeUsuario = new System.Windows.Forms.Label();
             this.btnVoltar = new System.Windows.Forms.Button();
-            this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.endereco = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.telefone = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.limete_credito = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisa)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,6 +56,7 @@
             // 
             // dgvPesquisa
             // 
+            this.dgvPesquisa.AllowUserToOrderColumns = true;
             this.dgvPesquisa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPesquisa.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nome,
@@ -68,6 +69,32 @@
             this.dgvPesquisa.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
             this.dgvPesquisa.Size = new System.Drawing.Size(642, 235);
             this.dgvPesquisa.TabIndex = 12;
+            // 
+            // nome
+            // 
+            this.nome.HeaderText = "Nome do cliente";
+            this.nome.Name = "nome";
+            this.nome.Width = 200;
+            // 
+            // endereco
+            // 
+            this.endereco.HeaderText = "Endereco";
+            this.endereco.Name = "endereco";
+            // 
+            // telefone
+            // 
+            this.telefone.HeaderText = "Telefone";
+            this.telefone.Name = "telefone";
+            // 
+            // status
+            // 
+            this.status.HeaderText = "Status";
+            this.status.Name = "status";
+            // 
+            // limete_credito
+            // 
+            this.limete_credito.HeaderText = "Limite de crédito";
+            this.limete_credito.Name = "limete_credito";
             // 
             // rdoOrdenarEmail
             // 
@@ -126,32 +153,6 @@
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
             this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
-            // 
-            // nome
-            // 
-            this.nome.HeaderText = "Nome do cliente";
-            this.nome.Name = "nome";
-            this.nome.Width = 200;
-            // 
-            // endereco
-            // 
-            this.endereco.HeaderText = "Endereco";
-            this.endereco.Name = "endereco";
-            // 
-            // telefone
-            // 
-            this.telefone.HeaderText = "Telefone";
-            this.telefone.Name = "telefone";
-            // 
-            // status
-            // 
-            this.status.HeaderText = "Status";
-            this.status.Name = "status";
-            // 
-            // limete_credito
-            // 
-            this.limete_credito.HeaderText = "Limite de crédito";
-            this.limete_credito.Name = "limete_credito";
             // 
             // Form_Consulta_Cliente
             // 

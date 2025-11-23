@@ -65,14 +65,13 @@ namespace Projeto_Modelo_C_Sharp.DAO
                     DtoProduto Produto = new DtoProduto();
                     Produto.id_produto = Convert.ToInt32(item["id_produto"]);
                     Produto.nome = item["nome"].ToString();
-                    Produto.preco = decimal.Parse((string)item["preco"]);
+                    Produto.preco = Convert.ToDecimal(item["preco"]);
                     Produto.id_categoria = Convert.ToInt32(item["id_categoria"]);
                 }
                 return colecaoProduto;
             }
             catch (Exception ex)
             {
-
                 throw ex;
             }
             finally

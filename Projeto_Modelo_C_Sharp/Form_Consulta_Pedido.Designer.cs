@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.btnVoltar = new System.Windows.Forms.Button();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvPesquisa = new System.Windows.Forms.DataGridView();
+            this.id_pedido = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nome_cliente = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.data = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rdoOrdenarData = new System.Windows.Forms.RadioButton();
             this.rdoOrdenarNome = new System.Windows.Forms.RadioButton();
             this.btnFinalizar = new System.Windows.Forms.Button();
@@ -41,7 +41,7 @@
             this.lblNomePedido = new System.Windows.Forms.Label();
             this.lblText = new System.Windows.Forms.Label();
             this.lblAviso1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisa)).BeginInit();
             this.SuspendLayout();
             // 
             // btnVoltar
@@ -53,43 +53,44 @@
             this.btnVoltar.TabIndex = 27;
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
+            this.btnVoltar.Click += new System.EventHandler(this.btnVoltar_Click);
             // 
-            // dataGridView1
+            // dgvPesquisa
             // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Column1,
-            this.Column4,
-            this.Column3,
-            this.Column2});
-            this.dataGridView1.Location = new System.Drawing.Point(12, 124);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.dataGridView1.Size = new System.Drawing.Size(492, 235);
-            this.dataGridView1.TabIndex = 26;
+            this.dgvPesquisa.AllowUserToOrderColumns = true;
+            this.dgvPesquisa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPesquisa.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.id_pedido,
+            this.nome_cliente,
+            this.data,
+            this.total});
+            this.dgvPesquisa.Location = new System.Drawing.Point(12, 124);
+            this.dgvPesquisa.Name = "dgvPesquisa";
+            this.dgvPesquisa.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.dgvPesquisa.Size = new System.Drawing.Size(492, 235);
+            this.dgvPesquisa.TabIndex = 26;
             // 
-            // Column1
+            // id_pedido
             // 
-            this.Column1.HeaderText = "Código do pedido";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 70;
+            this.id_pedido.HeaderText = "Código do pedido";
+            this.id_pedido.Name = "id_pedido";
+            this.id_pedido.Width = 70;
             // 
-            // Column4
+            // nome_cliente
             // 
-            this.Column4.HeaderText = "Nome do cliente";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 200;
+            this.nome_cliente.HeaderText = "Nome do cliente";
+            this.nome_cliente.Name = "nome_cliente";
+            this.nome_cliente.Width = 200;
             // 
-            // Column3
+            // data
             // 
-            this.Column3.HeaderText = "Data do pedido";
-            this.Column3.Name = "Column3";
+            this.data.HeaderText = "Data do pedido";
+            this.data.Name = "data";
             // 
-            // Column2
+            // total
             // 
-            this.Column2.HeaderText = "Valor total do pedido";
-            this.Column2.Name = "Column2";
+            this.total.HeaderText = "Valor total do pedido";
+            this.total.Name = "total";
             // 
             // rdoOrdenarData
             // 
@@ -166,7 +167,7 @@
             this.ClientSize = new System.Drawing.Size(527, 460);
             this.Controls.Add(this.lblAviso1);
             this.Controls.Add(this.btnVoltar);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvPesquisa);
             this.Controls.Add(this.rdoOrdenarData);
             this.Controls.Add(this.rdoOrdenarNome);
             this.Controls.Add(this.btnFinalizar);
@@ -175,7 +176,7 @@
             this.Controls.Add(this.lblText);
             this.Name = "Form_Consulta_Pedido";
             this.Text = "Form1_Consulta_Pedido";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisa)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -184,17 +185,17 @@
         #endregion
 
         private System.Windows.Forms.Button btnVoltar;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvPesquisa;
         private System.Windows.Forms.RadioButton rdoOrdenarData;
         private System.Windows.Forms.RadioButton rdoOrdenarNome;
         private System.Windows.Forms.Button btnFinalizar;
         private System.Windows.Forms.TextBox txtNomeUsuario;
         private System.Windows.Forms.Label lblNomePedido;
         private System.Windows.Forms.Label lblText;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.Label lblAviso1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn id_pedido;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nome_cliente;
+        private System.Windows.Forms.DataGridViewTextBoxColumn data;
+        private System.Windows.Forms.DataGridViewTextBoxColumn total;
     }
 }
