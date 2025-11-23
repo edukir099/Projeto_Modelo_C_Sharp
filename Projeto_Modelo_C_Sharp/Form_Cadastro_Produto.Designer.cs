@@ -38,6 +38,7 @@
             this.txtPreco = new System.Windows.Forms.TextBox();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.cmbCategoria = new System.Windows.Forms.ComboBox();
+            this.btnAdicionar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblText
@@ -134,11 +135,21 @@
             this.cmbCategoria.Size = new System.Drawing.Size(202, 21);
             this.cmbCategoria.TabIndex = 10;
             // 
+            // btnAdicionar
+            // 
+            this.btnAdicionar.Location = new System.Drawing.Point(257, 198);
+            this.btnAdicionar.Name = "btnAdicionar";
+            this.btnAdicionar.Size = new System.Drawing.Size(75, 37);
+            this.btnAdicionar.TabIndex = 11;
+            this.btnAdicionar.Text = "Adicionar";
+            this.btnAdicionar.UseVisualStyleBackColor = true;
+            // 
             // Form_Cadastro_Produto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(373, 337);
+            this.Controls.Add(this.btnAdicionar);
             this.Controls.Add(this.cmbCategoria);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.txtPreco);
@@ -168,5 +179,6 @@
         private System.Windows.Forms.TextBox txtPreco;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.ComboBox cmbCategoria;
+        private System.Windows.Forms.Button btnAdicionar;
     }
 }

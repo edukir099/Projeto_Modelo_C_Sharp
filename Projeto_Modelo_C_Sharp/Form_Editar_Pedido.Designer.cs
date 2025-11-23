@@ -51,6 +51,8 @@
             this.btnVoltar = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.lblText = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.lblCliente = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -59,7 +61,7 @@
             // 
             this.lblAviso2.AutoSize = true;
             this.lblAviso2.ForeColor = System.Drawing.Color.Red;
-            this.lblAviso2.Location = new System.Drawing.Point(22, 496);
+            this.lblAviso2.Location = new System.Drawing.Point(23, 535);
             this.lblAviso2.Name = "lblAviso2";
             this.lblAviso2.Size = new System.Drawing.Size(173, 13);
             this.lblAviso2.TabIndex = 45;
@@ -69,7 +71,7 @@
             // 
             this.lblCodigo_produto.AutoSize = true;
             this.lblCodigo_produto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigo_produto.Location = new System.Drawing.Point(59, 121);
+            this.lblCodigo_produto.Location = new System.Drawing.Point(60, 160);
             this.lblCodigo_produto.Name = "lblCodigo_produto";
             this.lblCodigo_produto.Size = new System.Drawing.Size(154, 20);
             this.lblCodigo_produto.TabIndex = 44;
@@ -79,7 +81,7 @@
             // 
             this.lblNome_produto.AutoSize = true;
             this.lblNome_produto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome_produto.Location = new System.Drawing.Point(68, 320);
+            this.lblNome_produto.Location = new System.Drawing.Point(69, 359);
             this.lblNome_produto.Name = "lblNome_produto";
             this.lblNome_produto.Size = new System.Drawing.Size(147, 20);
             this.lblNome_produto.TabIndex = 43;
@@ -90,7 +92,7 @@
             this.lblAviso1.AutoSize = true;
             this.lblAviso1.BackColor = System.Drawing.SystemColors.Control;
             this.lblAviso1.ForeColor = System.Drawing.Color.Red;
-            this.lblAviso1.Location = new System.Drawing.Point(22, 266);
+            this.lblAviso1.Location = new System.Drawing.Point(23, 305);
             this.lblAviso1.Name = "lblAviso1";
             this.lblAviso1.Size = new System.Drawing.Size(193, 13);
             this.lblAviso1.TabIndex = 42;
@@ -104,7 +106,7 @@
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
-            this.dataGridView2.Location = new System.Drawing.Point(25, 144);
+            this.dataGridView2.Location = new System.Drawing.Point(26, 183);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.Size = new System.Drawing.Size(535, 119);
             this.dataGridView2.TabIndex = 41;
@@ -138,7 +140,7 @@
             this.Quantidade,
             this.Valor_unidade,
             this.Valor_total});
-            this.dataGridView1.Location = new System.Drawing.Point(25, 343);
+            this.dataGridView1.Location = new System.Drawing.Point(26, 382);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(535, 150);
             this.dataGridView1.TabIndex = 40;
@@ -168,7 +170,7 @@
             // 
             this.lblReferencia.AutoSize = true;
             this.lblReferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReferencia.Location = new System.Drawing.Point(428, 64);
+            this.lblReferencia.Location = new System.Drawing.Point(429, 103);
             this.lblReferencia.Name = "lblReferencia";
             this.lblReferencia.Size = new System.Drawing.Size(59, 13);
             this.lblReferencia.TabIndex = 39;
@@ -176,14 +178,14 @@
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(431, 80);
+            this.textBox3.Location = new System.Drawing.Point(432, 119);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(129, 20);
             this.textBox3.TabIndex = 38;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(232, 80);
+            this.textBox2.Location = new System.Drawing.Point(233, 119);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(147, 20);
             this.textBox2.TabIndex = 37;
@@ -192,7 +194,7 @@
             // 
             this.lblMarca.AutoSize = true;
             this.lblMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarca.Location = new System.Drawing.Point(229, 64);
+            this.lblMarca.Location = new System.Drawing.Point(230, 103);
             this.lblMarca.Name = "lblMarca";
             this.lblMarca.Size = new System.Drawing.Size(37, 13);
             this.lblMarca.TabIndex = 36;
@@ -201,7 +203,7 @@
             // textBox1
             // 
             this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(25, 80);
+            this.textBox1.Location = new System.Drawing.Point(26, 119);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(152, 20);
             this.textBox1.TabIndex = 35;
@@ -210,7 +212,7 @@
             // 
             this.lblValorTotal.AutoSize = true;
             this.lblValorTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorTotal.Location = new System.Drawing.Point(22, 64);
+            this.lblValorTotal.Location = new System.Drawing.Point(23, 103);
             this.lblValorTotal.Name = "lblValorTotal";
             this.lblValorTotal.Size = new System.Drawing.Size(104, 13);
             this.lblValorTotal.TabIndex = 34;
@@ -219,7 +221,7 @@
             // btnVoltar
             // 
             this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltar.Location = new System.Drawing.Point(299, 545);
+            this.btnVoltar.Location = new System.Drawing.Point(300, 584);
             this.btnVoltar.Name = "btnVoltar";
             this.btnVoltar.Size = new System.Drawing.Size(118, 49);
             this.btnVoltar.TabIndex = 33;
@@ -229,7 +231,7 @@
             // btnCadastrar
             // 
             this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrar.Location = new System.Drawing.Point(442, 545);
+            this.btnCadastrar.Location = new System.Drawing.Point(443, 584);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(118, 49);
             this.btnCadastrar.TabIndex = 32;
@@ -246,11 +248,30 @@
             this.lblText.TabIndex = 31;
             this.lblText.Text = "Editar pedido";
             // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(26, 67);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(152, 20);
+            this.textBox4.TabIndex = 47;
+            // 
+            // lblCliente
+            // 
+            this.lblCliente.AutoSize = true;
+            this.lblCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCliente.Location = new System.Drawing.Point(23, 51);
+            this.lblCliente.Name = "lblCliente";
+            this.lblCliente.Size = new System.Drawing.Size(39, 13);
+            this.lblCliente.TabIndex = 46;
+            this.lblCliente.Text = "Cliente";
+            // 
             // Form_Editar_Pedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(590, 608);
+            this.ClientSize = new System.Drawing.Size(590, 644);
+            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.lblCliente);
             this.Controls.Add(this.lblAviso2);
             this.Controls.Add(this.lblCodigo_produto);
             this.Controls.Add(this.lblNome_produto);
@@ -300,5 +321,7 @@
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Label lblText;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label lblCliente;
     }
 }
