@@ -34,10 +34,10 @@
             this.lblText4 = new System.Windows.Forms.Label();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.lblText5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtPreco = new System.Windows.Forms.TextBox();
             this.btnVoltar = new System.Windows.Forms.Button();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // lblText
@@ -98,19 +98,19 @@
             this.lblText5.Size = new System.Drawing.Size(0, 13);
             this.lblText5.TabIndex = 5;
             // 
-            // textBox1
+            // txtNome
             // 
-            this.textBox1.Location = new System.Drawing.Point(36, 86);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(296, 20);
-            this.textBox1.TabIndex = 6;
+            this.txtNome.Location = new System.Drawing.Point(36, 86);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(296, 20);
+            this.txtNome.TabIndex = 6;
             // 
-            // textBox2
+            // txtPreco
             // 
-            this.textBox2.Location = new System.Drawing.Point(36, 148);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(296, 20);
-            this.textBox2.TabIndex = 7;
+            this.txtPreco.Location = new System.Drawing.Point(36, 148);
+            this.txtPreco.Name = "txtPreco";
+            this.txtPreco.Size = new System.Drawing.Size(296, 20);
+            this.txtPreco.TabIndex = 7;
             // 
             // btnVoltar
             // 
@@ -122,22 +122,23 @@
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // comboBox1
             // 
-            this.textBox3.Location = new System.Drawing.Point(36, 214);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(296, 20);
-            this.textBox3.TabIndex = 8;
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(36, 219);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(295, 21);
+            this.comboBox1.TabIndex = 10;
             // 
             // Form_Cadastro_Produto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(373, 337);
+            this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnVoltar);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtPreco);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.lblText5);
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.lblText4);
@@ -159,9 +160,9 @@
         private System.Windows.Forms.Label lblText4;
         private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Label lblText5;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtPreco;
         private System.Windows.Forms.Button btnVoltar;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

@@ -12,7 +12,7 @@ namespace Projeto_Modelo_C_Sharp.DAO
     {
         public MySqlConnection String_Conexao()
         {
-            return new MySqlConnection("user id=root;password=root;server=localhost:3307;database=bd_limpeza;SslMode=none");
+            return new MySqlConnection("user id=root;password=;server=localhost;port=3307;database=bd_limpeza;SslMode=0");
         }
     }
 }

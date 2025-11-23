@@ -32,25 +32,27 @@
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.lblText = new System.Windows.Forms.Label();
             this.lblValorTotal = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.lblMarca = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.lblReferencia = new System.Windows.Forms.Label();
+            this.txtTotal = new System.Windows.Forms.TextBox();
+            this.lblCategoria = new System.Windows.Forms.Label();
+            this.txtCategoria = new System.Windows.Forms.TextBox();
+            this.txtNomeProduto = new System.Windows.Forms.TextBox();
+            this.lblNome = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Nome_produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Valor_unidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Valor_total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.lblAviso1 = new System.Windows.Forms.Label();
-            this.lblNome_produto = new System.Windows.Forms.Label();
-            this.lblCodigo_produto = new System.Windows.Forms.Label();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lblAviso1 = new System.Windows.Forms.Label();
+            this.lblNome_produto = new System.Windows.Forms.Label();
+            this.lblCodigo_produto = new System.Windows.Forms.Label();
             this.lblAviso2 = new System.Windows.Forms.Label();
+            this.txtCliente = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -95,47 +97,47 @@
             this.lblValorTotal.TabIndex = 19;
             this.lblValorTotal.Text = "Valor total do pedido";
             // 
-            // textBox1
+            // txtTotal
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(24, 87);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(152, 20);
-            this.textBox1.TabIndex = 20;
+            this.txtTotal.Enabled = false;
+            this.txtTotal.Location = new System.Drawing.Point(24, 87);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(152, 20);
+            this.txtTotal.TabIndex = 20;
             // 
-            // lblMarca
+            // lblCategoria
             // 
-            this.lblMarca.AutoSize = true;
-            this.lblMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMarca.Location = new System.Drawing.Point(227, 64);
-            this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(53, 20);
-            this.lblMarca.TabIndex = 21;
-            this.lblMarca.Text = "Marca";
+            this.lblCategoria.AutoSize = true;
+            this.lblCategoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCategoria.Location = new System.Drawing.Point(227, 64);
+            this.lblCategoria.Name = "lblCategoria";
+            this.lblCategoria.Size = new System.Drawing.Size(78, 20);
+            this.lblCategoria.TabIndex = 21;
+            this.lblCategoria.Text = "Categoria";
             // 
-            // textBox2
+            // txtCategoria
             // 
-            this.textBox2.Location = new System.Drawing.Point(231, 87);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(147, 20);
-            this.textBox2.TabIndex = 22;
+            this.txtCategoria.Location = new System.Drawing.Point(231, 87);
+            this.txtCategoria.Name = "txtCategoria";
+            this.txtCategoria.Size = new System.Drawing.Size(147, 20);
+            this.txtCategoria.TabIndex = 22;
             // 
-            // textBox3
+            // txtNomeProduto
             // 
-            this.textBox3.Location = new System.Drawing.Point(430, 87);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(129, 20);
-            this.textBox3.TabIndex = 23;
+            this.txtNomeProduto.Location = new System.Drawing.Point(430, 87);
+            this.txtNomeProduto.Name = "txtNomeProduto";
+            this.txtNomeProduto.Size = new System.Drawing.Size(129, 20);
+            this.txtNomeProduto.TabIndex = 23;
             // 
-            // lblReferencia
+            // lblNome
             // 
-            this.lblReferencia.AutoSize = true;
-            this.lblReferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblReferencia.Location = new System.Drawing.Point(427, 64);
-            this.lblReferencia.Name = "lblReferencia";
-            this.lblReferencia.Size = new System.Drawing.Size(87, 20);
-            this.lblReferencia.TabIndex = 24;
-            this.lblReferencia.Text = "Referencia";
+            this.lblNome.AutoSize = true;
+            this.lblNome.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNome.Location = new System.Drawing.Point(427, 64);
+            this.lblNome.Name = "lblNome";
+            this.lblNome.Size = new System.Drawing.Size(111, 20);
+            this.lblNome.TabIndex = 24;
+            this.lblNome.Text = "Nome Produto";
             // 
             // dataGridView1
             // 
@@ -184,6 +186,27 @@
             this.dataGridView2.Size = new System.Drawing.Size(535, 119);
             this.dataGridView2.TabIndex = 26;
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn1.HeaderText = "Codigo de produto";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.HeaderText = "Nome do produto";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.HeaderText = "Valor da unidade";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.HeaderText = "Quantidade";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
             // lblAviso1
             // 
             this.lblAviso1.AutoSize = true;
@@ -215,27 +238,6 @@
             this.lblCodigo_produto.TabIndex = 29;
             this.lblCodigo_produto.Text = "Produto selecionado";
             // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn1.HeaderText = "Codigo de produto";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Nome do produto";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.HeaderText = "Valor da unidade";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            // 
-            // dataGridViewTextBoxColumn4
-            // 
-            this.dataGridViewTextBoxColumn4.HeaderText = "Quantidade";
-            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
-            // 
             // lblAviso2
             // 
             this.lblAviso2.AutoSize = true;
@@ -246,27 +248,47 @@
             this.lblAviso2.TabIndex = 30;
             this.lblAviso2.Text = "* Double click para remover pedido";
             // 
-            // Form_Pedido
+            // txtCliente
+            // 
+            this.txtCliente.Location = new System.Drawing.Point(25, 36);
+            this.txtCliente.Name = "txtCliente";
+            this.txtCliente.Size = new System.Drawing.Size(147, 20);
+            this.txtCliente.TabIndex = 32;
+            this.txtCliente.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(21, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(58, 20);
+            this.label1.TabIndex = 31;
+            this.label1.Text = "Cliente";
+            // 
+            // Form_Cadastro_Pedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(589, 606);
+            this.Controls.Add(this.txtCliente);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.lblAviso2);
             this.Controls.Add(this.lblCodigo_produto);
             this.Controls.Add(this.lblNome_produto);
             this.Controls.Add(this.lblAviso1);
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.lblReferencia);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.lblMarca);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.lblNome);
+            this.Controls.Add(this.txtNomeProduto);
+            this.Controls.Add(this.txtCategoria);
+            this.Controls.Add(this.lblCategoria);
+            this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.lblValorTotal);
             this.Controls.Add(this.btnVoltar);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.lblText);
-            this.Name = "Form_Pedido";
+            this.Name = "Form_Cadastro_Pedido";
             this.Text = "Form_Pedido";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
@@ -281,11 +303,11 @@
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Label lblText;
         private System.Windows.Forms.Label lblValorTotal;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label lblMarca;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label lblReferencia;
+        private System.Windows.Forms.TextBox txtTotal;
+        private System.Windows.Forms.Label lblCategoria;
+        private System.Windows.Forms.TextBox txtCategoria;
+        private System.Windows.Forms.TextBox txtNomeProduto;
+        private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome_produto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantidade;
@@ -300,5 +322,7 @@
         private System.Windows.Forms.Label lblNome_produto;
         private System.Windows.Forms.Label lblCodigo_produto;
         private System.Windows.Forms.Label lblAviso2;
+        private System.Windows.Forms.TextBox txtCliente;
+        private System.Windows.Forms.Label label1;
     }
 }
