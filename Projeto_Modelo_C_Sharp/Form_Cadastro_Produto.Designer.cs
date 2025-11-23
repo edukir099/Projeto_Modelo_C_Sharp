@@ -90,6 +90,7 @@
             this.btnSalvar.TabIndex = 4;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // lblText5
             // 
@@ -130,6 +131,7 @@
             this.cmbCategoria.Name = "cmbCategoria";
             this.cmbCategoria.Size = new System.Drawing.Size(202, 21);
             this.cmbCategoria.TabIndex = 10;
+            this.cmbCategoria.SelectedIndexChanged += new System.EventHandler(this.cmbCategoria_SelectedIndexChanged);
             // 
             // btnAdicionar
             // 
@@ -139,6 +141,7 @@
             this.btnAdicionar.TabIndex = 11;
             this.btnAdicionar.Text = "Adicionar";
             this.btnAdicionar.UseVisualStyleBackColor = true;
+            this.btnAdicionar.Click += new System.EventHandler(this.btnAdicionar_Click);
             // 
             // Form_Cadastro_Produto
             // 
@@ -158,6 +161,7 @@
             this.Controls.Add(this.lblText);
             this.Name = "Form_Cadastro_Produto";
             this.Text = "Form_Produto";
+            this.Load += new System.EventHandler(this.Form_Cadastro_Produto_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

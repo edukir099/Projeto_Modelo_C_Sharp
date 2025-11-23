@@ -30,7 +30,7 @@
         {
             this.lblCategoria = new System.Windows.Forms.Label();
             this.lblNome_Categoria = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtCategoria = new System.Windows.Forms.TextBox();
             this.btnSalvar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -54,12 +54,12 @@
             this.lblNome_Categoria.TabIndex = 1;
             this.lblNome_Categoria.Text = "Nome da categoria";
             // 
-            // textBox1
+            // txtCategoria
             // 
-            this.textBox1.Location = new System.Drawing.Point(32, 74);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(319, 20);
-            this.textBox1.TabIndex = 3;
+            this.txtCategoria.Location = new System.Drawing.Point(32, 74);
+            this.txtCategoria.Name = "txtCategoria";
+            this.txtCategoria.Size = new System.Drawing.Size(319, 20);
+            this.txtCategoria.TabIndex = 3;
             // 
             // btnSalvar
             // 
@@ -70,6 +70,7 @@
             this.btnSalvar.TabIndex = 8;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // Form_Adicionar_Categoria
             // 
@@ -77,7 +78,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(386, 182);
             this.Controls.Add(this.btnSalvar);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCategoria);
             this.Controls.Add(this.lblNome_Categoria);
             this.Controls.Add(this.lblCategoria);
             this.Name = "Form_Adicionar_Categoria";
@@ -91,7 +92,7 @@
 
         private System.Windows.Forms.Label lblCategoria;
         private System.Windows.Forms.Label lblNome_Categoria;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtCategoria;
         private System.Windows.Forms.Button btnSalvar;
     }
 }

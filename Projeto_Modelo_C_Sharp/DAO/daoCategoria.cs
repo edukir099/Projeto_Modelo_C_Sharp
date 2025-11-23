@@ -64,6 +64,8 @@ namespace Projeto_Modelo_C_Sharp.DAO
                     DtoCategoria Categoria = new DtoCategoria();
                     Categoria.id_categoria = Convert.ToInt32(item["id_categoria"]);
                     Categoria.nome = item["nome"].ToString();
+
+                    colecaoCategoria.Add(Categoria);
                 }
                 return colecaoCategoria;
             }
