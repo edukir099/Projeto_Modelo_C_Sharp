@@ -23,5 +23,25 @@ namespace Projeto_Modelo_C_Sharp
         {
 
         }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblValorTotal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCategoria_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblNome_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
