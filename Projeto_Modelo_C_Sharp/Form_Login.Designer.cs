@@ -32,10 +32,10 @@
             this.lblText = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.btnVoltar = new System.Windows.Forms.Button();
-            this.btnEntrar = new System.Windows.Forms.Button();
+            this.txt_senha = new System.Windows.Forms.TextBox();
+            this.txt_usuario = new System.Windows.Forms.TextBox();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lblText
@@ -71,39 +71,42 @@
             this.label2.TabIndex = 3;
             this.label2.Text = "Senha";
             // 
-            // textBox1
+            // txt_senha
             // 
-            this.textBox1.Location = new System.Drawing.Point(24, 136);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(260, 20);
-            this.textBox1.TabIndex = 17;
+            this.txt_senha.Location = new System.Drawing.Point(24, 136);
+            this.txt_senha.Name = "txt_senha";
+            this.txt_senha.PasswordChar = '*';
+            this.txt_senha.Size = new System.Drawing.Size(260, 20);
+            this.txt_senha.TabIndex = 17;
             // 
-            // textBox2
+            // txt_usuario
             // 
-            this.textBox2.Location = new System.Drawing.Point(24, 69);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(260, 20);
-            this.textBox2.TabIndex = 18;
+            this.txt_usuario.Location = new System.Drawing.Point(24, 69);
+            this.txt_usuario.Name = "txt_usuario";
+            this.txt_usuario.Size = new System.Drawing.Size(260, 20);
+            this.txt_usuario.TabIndex = 18;
             // 
-            // btnVoltar
+            // button2
             // 
-            this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnVoltar.Location = new System.Drawing.Point(24, 197);
-            this.btnVoltar.Name = "btnVoltar";
-            this.btnVoltar.Size = new System.Drawing.Size(94, 46);
-            this.btnVoltar.TabIndex = 21;
-            this.btnVoltar.Text = "Voltar";
-            this.btnVoltar.UseVisualStyleBackColor = true;
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(24, 197);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(94, 46);
+            this.button2.TabIndex = 21;
+            this.button2.Text = "Limpar";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // btnEntrar
+            // button1
             // 
-            this.btnEntrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEntrar.Location = new System.Drawing.Point(190, 197);
-            this.btnEntrar.Name = "btnEntrar";
-            this.btnEntrar.Size = new System.Drawing.Size(94, 46);
-            this.btnEntrar.TabIndex = 20;
-            this.btnEntrar.Text = "Entrar";
-            this.btnEntrar.UseVisualStyleBackColor = true;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(190, 197);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(94, 46);
+            this.button1.TabIndex = 20;
+            this.button1.Text = "Entrar";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // Form_Login
             // 
@@ -111,10 +114,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(310, 255);
-            this.Controls.Add(this.btnVoltar);
-            this.Controls.Add(this.btnEntrar);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.txt_usuario);
+            this.Controls.Add(this.txt_senha);
             this.Controls.Add(this.lblText);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
@@ -134,10 +137,10 @@
         private System.Windows.Forms.Label lblText;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Button btnVoltar;
-        private System.Windows.Forms.Button btnEntrar;
+        private System.Windows.Forms.TextBox txt_senha;
+        private System.Windows.Forms.TextBox txt_usuario;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button1;
     }
 }
 
