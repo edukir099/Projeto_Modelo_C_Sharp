@@ -1,6 +1,6 @@
 ﻿namespace Projeto_Modelo_C_Sharp
 {
-    partial class Form_Consultar_Produto
+    partial class Form_Consulta_Produto
     {
         /// <summary>
         /// Required designer variable.

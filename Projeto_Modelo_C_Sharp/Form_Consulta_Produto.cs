@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Projeto_Modelo_C_Sharp
 {
-    public partial class Form_Consultar_Produto: Form
+    public partial class Form_Consulta_Produto: Form
     {
-        public Form_Consultar_Produto()
+        public Form_Consulta_Produto()
         {
             InitializeComponent();
         }

@@ -129,11 +129,11 @@
     <Compile Include="Form_Cadastro_Cliente.Designer.cs">
       <DependentUpon>Form_Cadastro_Cliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form_Consultar_Produto.cs">
+    <Compile Include="Form_Consulta_Produto.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form_Consultar_Produto.Designer.cs">
-      <DependentUpon>Form_Consultar_Produto.cs</DependentUpon>
+    <Compile Include="Form_Consulta_Produto.Designer.cs">
+      <DependentUpon>Form_Consulta_Produto.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_Consulta_Cliente.cs">
       <SubType>Form</SubType>
@@ -195,8 +195,8 @@
     <EmbeddedResource Include="Form_Cadastro_Cliente.resx">
       <DependentUpon>Form_Cadastro_Cliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form_Consultar_Produto.resx">
-      <DependentUpon>Form_Consultar_Produto.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Consulta_Produto.resx">
+      <DependentUpon>Form_Consulta_Produto.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Consulta_Cliente.resx">
       <DependentUpon>Form_Consulta_Cliente.cs</DependentUpon>
@@ -230,6 +230,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -245,11 +246,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="img\" />
+    <Folder Include="Resources\" />
+  </ItemGroup>
   <ItemGroup>
     <Content Include="icone_sistema 3.ico" />
-    <Content Include="img\icone_sistema.ico" />
-    <Content Include="img\logo_sistema.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
