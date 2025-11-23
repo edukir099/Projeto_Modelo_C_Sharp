@@ -58,6 +58,8 @@
             // dgvPesquisa
             // 
             this.dgvPesquisa.AllowUserToOrderColumns = true;
+            this.dgvPesquisa.AllowUserToResizeColumns = false;
+            this.dgvPesquisa.AllowUserToResizeRows = false;
             this.dgvPesquisa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPesquisa.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id_pedido,
@@ -66,7 +68,7 @@
             this.total});
             this.dgvPesquisa.Location = new System.Drawing.Point(12, 124);
             this.dgvPesquisa.Name = "dgvPesquisa";
-            this.dgvPesquisa.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.dgvPesquisa.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvPesquisa.Size = new System.Drawing.Size(492, 235);
             this.dgvPesquisa.TabIndex = 26;
             // 

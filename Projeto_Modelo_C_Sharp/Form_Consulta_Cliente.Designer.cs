@@ -57,6 +57,8 @@
             // dgvPesquisa
             // 
             this.dgvPesquisa.AllowUserToOrderColumns = true;
+            this.dgvPesquisa.AllowUserToResizeColumns = false;
+            this.dgvPesquisa.AllowUserToResizeRows = false;
             this.dgvPesquisa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPesquisa.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.nome,
@@ -66,7 +68,7 @@
             this.limete_credito});
             this.dgvPesquisa.Location = new System.Drawing.Point(15, 123);
             this.dgvPesquisa.Name = "dgvPesquisa";
-            this.dgvPesquisa.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.dgvPesquisa.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvPesquisa.Size = new System.Drawing.Size(642, 235);
             this.dgvPesquisa.TabIndex = 12;
             // 

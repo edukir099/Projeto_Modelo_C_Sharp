@@ -39,7 +39,7 @@
             this.id_produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.id_categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.id_preco = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.preco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisa)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,15 +68,17 @@
             // dgvPesquisa
             // 
             this.dgvPesquisa.AllowUserToOrderColumns = true;
+            this.dgvPesquisa.AllowUserToResizeColumns = false;
+            this.dgvPesquisa.AllowUserToResizeRows = false;
             this.dgvPesquisa.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvPesquisa.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id_produto,
             this.nome,
             this.id_categoria,
-            this.id_preco});
+            this.preco});
             this.dgvPesquisa.Location = new System.Drawing.Point(25, 127);
             this.dgvPesquisa.Name = "dgvPesquisa";
-            this.dgvPesquisa.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.dgvPesquisa.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvPesquisa.Size = new System.Drawing.Size(504, 235);
             this.dgvPesquisa.TabIndex = 35;
             // 
@@ -130,23 +132,25 @@
             // 
             this.id_produto.HeaderText = "Código do produto";
             this.id_produto.Name = "id_produto";
-            this.id_produto.Width = 70;
+            this.id_produto.Width = 115;
             // 
             // nome
             // 
             this.nome.HeaderText = "Nome do produto";
             this.nome.Name = "nome";
-            this.nome.Width = 200;
+            this.nome.Width = 116;
             // 
             // id_categoria
             // 
             this.id_categoria.HeaderText = "Categoria";
             this.id_categoria.Name = "id_categoria";
+            this.id_categoria.Width = 115;
             // 
-            // id_preco
+            // preco
             // 
-            this.id_preco.HeaderText = "Valor da unidade";
-            this.id_preco.Name = "id_preco";
+            this.preco.HeaderText = "Valor da unidade";
+            this.preco.Name = "preco";
+            this.preco.Width = 115;
             // 
             // Form_Consulta_Produto
             // 
@@ -182,6 +186,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn id_produto;
         private System.Windows.Forms.DataGridViewTextBoxColumn nome;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_categoria;
-        private System.Windows.Forms.DataGridViewTextBoxColumn id_preco;
+        private System.Windows.Forms.DataGridViewTextBoxColumn preco;
     }
 }

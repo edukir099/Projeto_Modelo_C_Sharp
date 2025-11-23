@@ -55,8 +55,8 @@ namespace Projeto_Modelo_C_Sharp
             dgvPesquisa.Columns.Add(new DataGridViewTextBoxColumn()
             {
                 HeaderText = "Valor da unidade",
-                DataPropertyName = "id_preco",
-                Name = "id_preco"
+                DataPropertyName = "preco",
+                Name = "preco"
             });
 
             dgvPesquisa.DataSource = colecaoproduto;
