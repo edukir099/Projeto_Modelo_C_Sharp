@@ -15,10 +15,10 @@ namespace Projeto_Modelo_C_Sharp
 {
     public partial class Form_Cadastro_Produto: Form
     {
+        private daoCategoria dao;
         public Form_Cadastro_Produto()
         {
-            InitializeComponent();
-            daoCategoria dao = new daoCategoria();
+            InitializeComponent();            
             dao = new daoCategoria();
         }
 
@@ -32,22 +32,8 @@ namespace Projeto_Modelo_C_Sharp
         {
             if (cmbCategoria.SelectedValue != null)
             {
-                int idCategoriaSelecionada;
-
-                // Tenta converter com segurança
-                if (int.TryParse(cmbCategoria.SelectedValue.ToString(), out idCategoriaSelecionada))
-                {
-                    DtoProduto dtoProduto = new DtoProduto();
-                    dtoProduto.id_categoria = idCategoriaSelecionada;
-                }
-                else
-                {
-                    MessageBox.Show("Erro ao ler o ID da categoria.");
-                }
-            }
-            else
-            {
-                MessageBox.Show("Nenhuma categoria selecionada.");
+                int idCategoriaSelecionada = (int)cmbCategoria.SelectedValue;
+                Console.WriteLine($"Categoria selecionada: {idCategoriaSelecionada}");
             }
         }
 
