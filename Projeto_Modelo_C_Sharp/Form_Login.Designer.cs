@@ -124,6 +124,7 @@
             this.Name = "Form_Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Sistema Modelo - Login";
+            this.Load += new System.EventHandler(this.Form_Login_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

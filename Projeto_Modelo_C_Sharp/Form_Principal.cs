@@ -41,11 +41,6 @@ namespace Projeto_Modelo_C_Sharp
             txt_hora.Text = data_hora_sistema.ToString("HH':'mm':'ss");
         }
 
-        private void trumaToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void calculadoraToolStripMenuItem_Click(object sender, EventArgs e)
         {
             // Código para abrir a calculadora do Windows
@@ -71,6 +66,54 @@ namespace Projeto_Modelo_C_Sharp
             MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             { Application.Exit(); }
         }
-    
+
+        private void clientecadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_Cadastro_Cliente objfrmcadastrocliente = new Form_Cadastro_Cliente();
+            objfrmcadastrocliente.MdiParent = this;
+            objfrmcadastrocliente.Show();
+        }
+
+        private void produtocadTooStripMenuItem10_Click(object sender, EventArgs e)
+        {
+            Form_Cadastro_Produto objfrmcadastroproduto = new Form_Cadastro_Produto();
+            objfrmcadastroproduto.MdiParent = this;
+            objfrmcadastroproduto.Show();
+        }
+
+        private void pedidocadToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form_Cadastro_Pedido objfrmcadastropedido = new Form_Cadastro_Pedido();
+            objfrmcadastropedido.MdiParent = this;
+            objfrmcadastropedido.Show();
+        }
+
+        private void clienteconToolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            Form_Consulta_Cliente objfrmconsultacliente = new Form_Consulta_Cliente();
+            objfrmconsultacliente.MdiParent = this;
+            objfrmconsultacliente.Show();
+        }
+
+        private void produtoconToolStripMenuItem7_Click(object sender, EventArgs e)
+        {
+            Form_Consulta_Produto objfrmconsultaproduto = new Form_Consulta_Produto();
+            objfrmconsultaproduto.MdiParent = this;
+            objfrmconsultaproduto.Show();
+        }
+
+        private void pedidoconToolStripMenuItem8_Click(object sender, EventArgs e)
+        {
+            Form_Consulta_Pedido objfrmconsultapedido = new Form_Consulta_Pedido();
+            objfrmconsultapedido.MdiParent = this;
+            objfrmconsultapedido.Show();
+        }
+
+        private void relatoriovenToolStripMenuItem29_Click(object sender, EventArgs e)
+        {
+            Form_Relatorio objfrmrelatorio = new Form_Relatorio();
+            objfrmrelatorio.MdiParent = this;
+            objfrmrelatorio.Show();
+        }
     }
 }

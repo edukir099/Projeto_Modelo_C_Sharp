@@ -53,5 +53,10 @@ namespace Projeto_Modelo_C_Sharp
                 txt_usuario.Focus();
             }
         }
+
+        private void Form_Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
