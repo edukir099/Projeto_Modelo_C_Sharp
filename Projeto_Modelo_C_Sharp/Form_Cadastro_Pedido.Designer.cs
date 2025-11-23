@@ -34,8 +34,6 @@
             this.lblValorTotal = new System.Windows.Forms.Label();
             this.txtTotal = new System.Windows.Forms.TextBox();
             this.lblCategoria = new System.Windows.Forms.Label();
-            this.txtCategoria = new System.Windows.Forms.TextBox();
-            this.txtNomeProduto = new System.Windows.Forms.TextBox();
             this.lblNome = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Nome_produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -51,8 +49,10 @@
             this.lblNome_produto = new System.Windows.Forms.Label();
             this.lblCodigo_produto = new System.Windows.Forms.Label();
             this.lblAviso2 = new System.Windows.Forms.Label();
-            this.txtCliente = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.comboBoxCliente = new System.Windows.Forms.ComboBox();
+            this.comboBoxCategoria = new System.Windows.Forms.ComboBox();
+            this.comboBoxProduto = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.SuspendLayout();
@@ -114,20 +114,6 @@
             this.lblCategoria.Size = new System.Drawing.Size(78, 20);
             this.lblCategoria.TabIndex = 21;
             this.lblCategoria.Text = "Categoria";
-            // 
-            // txtCategoria
-            // 
-            this.txtCategoria.Location = new System.Drawing.Point(231, 87);
-            this.txtCategoria.Name = "txtCategoria";
-            this.txtCategoria.Size = new System.Drawing.Size(147, 20);
-            this.txtCategoria.TabIndex = 22;
-            // 
-            // txtNomeProduto
-            // 
-            this.txtNomeProduto.Location = new System.Drawing.Point(430, 87);
-            this.txtNomeProduto.Name = "txtNomeProduto";
-            this.txtNomeProduto.Size = new System.Drawing.Size(129, 20);
-            this.txtNomeProduto.TabIndex = 23;
             // 
             // lblNome
             // 
@@ -248,14 +234,6 @@
             this.lblAviso2.TabIndex = 30;
             this.lblAviso2.Text = "* Double click para remover pedido";
             // 
-            // txtCliente
-            // 
-            this.txtCliente.Location = new System.Drawing.Point(25, 36);
-            this.txtCliente.Name = "txtCliente";
-            this.txtCliente.Size = new System.Drawing.Size(147, 20);
-            this.txtCliente.TabIndex = 32;
-            this.txtCliente.TextChanged += new System.EventHandler(this.textBox4_TextChanged);
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -266,12 +244,38 @@
             this.label1.TabIndex = 31;
             this.label1.Text = "Cliente";
             // 
+            // comboBoxCliente
+            // 
+            this.comboBoxCliente.FormattingEnabled = true;
+            this.comboBoxCliente.Location = new System.Drawing.Point(25, 36);
+            this.comboBoxCliente.Name = "comboBoxCliente";
+            this.comboBoxCliente.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxCliente.TabIndex = 32;
+            // 
+            // comboBoxCategoria
+            // 
+            this.comboBoxCategoria.FormattingEnabled = true;
+            this.comboBoxCategoria.Location = new System.Drawing.Point(231, 87);
+            this.comboBoxCategoria.Name = "comboBoxCategoria";
+            this.comboBoxCategoria.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxCategoria.TabIndex = 33;
+            // 
+            // comboBoxProduto
+            // 
+            this.comboBoxProduto.FormattingEnabled = true;
+            this.comboBoxProduto.Location = new System.Drawing.Point(431, 87);
+            this.comboBoxProduto.Name = "comboBoxProduto";
+            this.comboBoxProduto.Size = new System.Drawing.Size(121, 21);
+            this.comboBoxProduto.TabIndex = 34;
+            // 
             // Form_Cadastro_Pedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(589, 606);
-            this.Controls.Add(this.txtCliente);
+            this.Controls.Add(this.comboBoxProduto);
+            this.Controls.Add(this.comboBoxCategoria);
+            this.Controls.Add(this.comboBoxCliente);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.lblAviso2);
             this.Controls.Add(this.lblCodigo_produto);
@@ -280,8 +284,6 @@
             this.Controls.Add(this.dataGridView2);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.lblNome);
-            this.Controls.Add(this.txtNomeProduto);
-            this.Controls.Add(this.txtCategoria);
             this.Controls.Add(this.lblCategoria);
             this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.lblValorTotal);
@@ -305,8 +307,6 @@
         private System.Windows.Forms.Label lblValorTotal;
         private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.Label lblCategoria;
-        private System.Windows.Forms.TextBox txtCategoria;
-        private System.Windows.Forms.TextBox txtNomeProduto;
         private System.Windows.Forms.Label lblNome;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome_produto;
@@ -322,7 +322,9 @@
         private System.Windows.Forms.Label lblNome_produto;
         private System.Windows.Forms.Label lblCodigo_produto;
         private System.Windows.Forms.Label lblAviso2;
-        private System.Windows.Forms.TextBox txtCliente;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBoxCliente;
+        private System.Windows.Forms.ComboBox comboBoxCategoria;
+        private System.Windows.Forms.ComboBox comboBoxProduto;
     }
 }
