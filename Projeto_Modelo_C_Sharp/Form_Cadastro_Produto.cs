@@ -76,6 +76,11 @@ namespace Projeto_Modelo_C_Sharp
                 throw;
             }
         }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }
 
