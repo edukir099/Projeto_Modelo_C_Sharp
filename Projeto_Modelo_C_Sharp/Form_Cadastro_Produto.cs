@@ -30,9 +30,12 @@ namespace Projeto_Modelo_C_Sharp
 
         private void cmbCategoria_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbCategoria.SelectedValue != null)
+            if (cmbCategoria.DataSource == null)
+                return;
+
+            // Verifica se SelectedValue não é nulo e é um int
+            if (cmbCategoria.SelectedValue != null && int.TryParse(cmbCategoria.SelectedValue.ToString(), out int idCategoriaSelecionada))
             {
-                int idCategoriaSelecionada = (int)cmbCategoria.SelectedValue;
                 Console.WriteLine($"Categoria selecionada: {idCategoriaSelecionada}");
             }
         }
