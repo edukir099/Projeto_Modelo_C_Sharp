@@ -71,6 +71,7 @@
             this.dgvPesquisa.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvPesquisa.Size = new System.Drawing.Size(492, 235);
             this.dgvPesquisa.TabIndex = 26;
+            this.dgvPesquisa.CellContentDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPesquisa_CellContentDoubleClick);
             // 
             // id_pedido
             // 

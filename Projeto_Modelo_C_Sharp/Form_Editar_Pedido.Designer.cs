@@ -32,29 +32,29 @@
             this.lblCodigo_produto = new System.Windows.Forms.Label();
             this.lblNome_produto = new System.Windows.Forms.Label();
             this.lblAviso1 = new System.Windows.Forms.Label();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgvProdutoSelecionado = new System.Windows.Forms.DataGridView();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvProdutosPedido = new System.Windows.Forms.DataGridView();
             this.Nome_produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Quantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Valor_unidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Valor_total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblReferencia = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.lblMarca = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.lblValorTotal = new System.Windows.Forms.Label();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.btnCadastrar = new System.Windows.Forms.Button();
             this.lblText = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.lblCliente = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.comboBoxCliente = new System.Windows.Forms.ComboBox();
+            this.comboBoxCategoria = new System.Windows.Forms.ComboBox();
+            this.comboBoxProduto = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProdutoSelecionado)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProdutosPedido)).BeginInit();
             this.SuspendLayout();
             // 
             // lblAviso2
@@ -98,18 +98,19 @@
             this.lblAviso1.TabIndex = 42;
             this.lblAviso1.Text = "* Double click para adicionar ao pedido";
             // 
-            // dataGridView2
+            // dgvProdutoSelecionado
             // 
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvProdutoSelecionado.AllowUserToAddRows = false;
+            this.dgvProdutoSelecionado.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProdutoSelecionado.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
             this.dataGridViewTextBoxColumn2,
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4});
-            this.dataGridView2.Location = new System.Drawing.Point(26, 183);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(535, 119);
-            this.dataGridView2.TabIndex = 41;
+            this.dgvProdutoSelecionado.Location = new System.Drawing.Point(26, 183);
+            this.dgvProdutoSelecionado.Name = "dgvProdutoSelecionado";
+            this.dgvProdutoSelecionado.Size = new System.Drawing.Size(535, 119);
+            this.dgvProdutoSelecionado.TabIndex = 41;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -132,18 +133,19 @@
             this.dataGridViewTextBoxColumn4.HeaderText = "Quantidade";
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             // 
-            // dataGridView1
+            // dgvProdutosPedido
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvProdutosPedido.AllowUserToAddRows = false;
+            this.dgvProdutosPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvProdutosPedido.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Nome_produto,
             this.Quantidade,
             this.Valor_unidade,
             this.Valor_total});
-            this.dataGridView1.Location = new System.Drawing.Point(26, 382);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(535, 150);
-            this.dataGridView1.TabIndex = 40;
+            this.dgvProdutosPedido.Location = new System.Drawing.Point(26, 382);
+            this.dgvProdutosPedido.Name = "dgvProdutosPedido";
+            this.dgvProdutosPedido.Size = new System.Drawing.Size(535, 150);
+            this.dgvProdutosPedido.TabIndex = 40;
             // 
             // Nome_produto
             // 
@@ -172,23 +174,9 @@
             this.lblReferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblReferencia.Location = new System.Drawing.Point(429, 103);
             this.lblReferencia.Name = "lblReferencia";
-            this.lblReferencia.Size = new System.Drawing.Size(59, 13);
+            this.lblReferencia.Size = new System.Drawing.Size(75, 13);
             this.lblReferencia.TabIndex = 39;
-            this.lblReferencia.Text = "Referencia";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(432, 119);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(129, 20);
-            this.textBox3.TabIndex = 38;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(233, 119);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(147, 20);
-            this.textBox2.TabIndex = 37;
+            this.lblReferencia.Text = "Nome Produto";
             // 
             // lblMarca
             // 
@@ -196,9 +184,9 @@
             this.lblMarca.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMarca.Location = new System.Drawing.Point(230, 103);
             this.lblMarca.Name = "lblMarca";
-            this.lblMarca.Size = new System.Drawing.Size(37, 13);
+            this.lblMarca.Size = new System.Drawing.Size(52, 13);
             this.lblMarca.TabIndex = 36;
-            this.lblMarca.Text = "Marca";
+            this.lblMarca.Text = "Categoria";
             // 
             // textBox1
             // 
@@ -248,13 +236,6 @@
             this.lblText.TabIndex = 31;
             this.lblText.Text = "Editar pedido";
             // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(26, 67);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(152, 20);
-            this.textBox4.TabIndex = 47;
-            // 
             // lblCliente
             // 
             this.lblCliente.AutoSize = true;
@@ -265,22 +246,46 @@
             this.lblCliente.TabIndex = 46;
             this.lblCliente.Text = "Cliente";
             // 
+            // comboBoxCliente
+            // 
+            this.comboBoxCliente.FormattingEnabled = true;
+            this.comboBoxCliente.Location = new System.Drawing.Point(26, 67);
+            this.comboBoxCliente.Name = "comboBoxCliente";
+            this.comboBoxCliente.Size = new System.Drawing.Size(138, 21);
+            this.comboBoxCliente.TabIndex = 47;
+            // 
+            // comboBoxCategoria
+            // 
+            this.comboBoxCategoria.FormattingEnabled = true;
+            this.comboBoxCategoria.Location = new System.Drawing.Point(232, 119);
+            this.comboBoxCategoria.Name = "comboBoxCategoria";
+            this.comboBoxCategoria.Size = new System.Drawing.Size(138, 21);
+            this.comboBoxCategoria.TabIndex = 48;
+            // 
+            // comboBoxProduto
+            // 
+            this.comboBoxProduto.FormattingEnabled = true;
+            this.comboBoxProduto.Location = new System.Drawing.Point(432, 119);
+            this.comboBoxProduto.Name = "comboBoxProduto";
+            this.comboBoxProduto.Size = new System.Drawing.Size(138, 21);
+            this.comboBoxProduto.TabIndex = 49;
+            // 
             // Form_Editar_Pedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(590, 644);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.comboBoxProduto);
+            this.Controls.Add(this.comboBoxCategoria);
+            this.Controls.Add(this.comboBoxCliente);
             this.Controls.Add(this.lblCliente);
             this.Controls.Add(this.lblAviso2);
             this.Controls.Add(this.lblCodigo_produto);
             this.Controls.Add(this.lblNome_produto);
             this.Controls.Add(this.lblAviso1);
-            this.Controls.Add(this.dataGridView2);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvProdutoSelecionado);
+            this.Controls.Add(this.dgvProdutosPedido);
             this.Controls.Add(this.lblReferencia);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.lblMarca);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.lblValorTotal);
@@ -289,8 +294,8 @@
             this.Controls.Add(this.lblText);
             this.Name = "Form_Editar_Pedido";
             this.Text = "Form_Editar_Pedido";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProdutoSelecionado)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvProdutosPedido)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -302,26 +307,26 @@
         private System.Windows.Forms.Label lblCodigo_produto;
         private System.Windows.Forms.Label lblNome_produto;
         private System.Windows.Forms.Label lblAviso1;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dgvProdutoSelecionado;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvProdutosPedido;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nome_produto;
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantidade;
         private System.Windows.Forms.DataGridViewTextBoxColumn Valor_unidade;
         private System.Windows.Forms.DataGridViewTextBoxColumn Valor_total;
         private System.Windows.Forms.Label lblReferencia;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label lblMarca;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label lblValorTotal;
         private System.Windows.Forms.Button btnVoltar;
         private System.Windows.Forms.Button btnCadastrar;
         private System.Windows.Forms.Label lblText;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label lblCliente;
+        private System.Windows.Forms.ComboBox comboBoxCliente;
+        private System.Windows.Forms.ComboBox comboBoxCategoria;
+        private System.Windows.Forms.ComboBox comboBoxProduto;
     }
 }
