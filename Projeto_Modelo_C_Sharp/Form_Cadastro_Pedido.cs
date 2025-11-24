@@ -36,11 +36,11 @@ namespace Projeto_Modelo_C_Sharp
 
         private void comboBoxCliente_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBoxCliente.DataSource == null)
+            if (cmbCliente.DataSource == null)
                 return;
 
             // Verifica se SelectedValue não é nulo e é um int
-            if (comboBoxCliente.SelectedValue != null && int.TryParse(comboBoxCliente.SelectedValue.ToString(), out int idClienteSelecionado))
+            if (cmbCliente.SelectedValue != null && int.TryParse(cmbCliente.SelectedValue.ToString(), out int idClienteSelecionado))
             {
                 Console.WriteLine($"Cliente selecionado: {idClienteSelecionado}");
             }
@@ -79,40 +79,40 @@ namespace Projeto_Modelo_C_Sharp
 
             var clientes = daoCliente.Select_Geral();
 
-            comboBoxCliente.SelectedIndexChanged -= comboBoxCliente_SelectedIndexChanged;
+            cmbCliente.SelectedIndexChanged -= comboBoxCliente_SelectedIndexChanged;
 
-            comboBoxCliente.DataSource = clientes;
-            comboBoxCliente.DisplayMember = "nome";
-            comboBoxCliente.ValueMember = "id_cliente";
-            comboBoxCliente.SelectedIndex = 0;
+            cmbCliente.DataSource = clientes;
+            cmbCliente.DisplayMember = "nome";
+            cmbCliente.ValueMember = "id_cliente";
+            cmbCliente.SelectedIndex = 0;
 
-            comboBoxCliente.SelectedIndexChanged += comboBoxCliente_SelectedIndexChanged;
+            cmbCliente.SelectedIndexChanged += comboBoxCliente_SelectedIndexChanged;
 
             // 2️⃣ Carregar categorias
             var categorias = new daoCategoria().Select_Geral();
 
-            comboBoxCategoria.SelectedIndexChanged -= comboBoxCategoria_SelectedIndexChanged;
+            cmbCategoria.SelectedIndexChanged -= comboBoxCategoria_SelectedIndexChanged;
 
-            comboBoxCategoria.DataSource = categorias;
-            comboBoxCategoria.DisplayMember = "nome";
-            comboBoxCategoria.ValueMember = "id_categoria";
-            comboBoxCategoria.SelectedIndex = 0;
+            cmbCategoria.DataSource = categorias;
+            cmbCategoria.DisplayMember = "nome";
+            cmbCategoria.ValueMember = "id_categoria";
+            cmbCategoria.SelectedIndex = 0;
 
-            comboBoxCategoria.SelectedIndexChanged += comboBoxCategoria_SelectedIndexChanged;
+            cmbCategoria.SelectedIndexChanged += comboBoxCategoria_SelectedIndexChanged;
 
             // 3️⃣ Carregar produtos
             var produtos = new daoProduto().Select_Geral();
 
-            comboBoxProduto.SelectedIndexChanged -= comboBoxProduto_SelectedIndexChanged;
+            cmbProduto.SelectedIndexChanged -= comboBoxProduto_SelectedIndexChanged;
 
-            comboBoxProduto.DataSource = produtos;
-            comboBoxProduto.DisplayMember = "nome";
-            comboBoxProduto.ValueMember = "id_produto";
-            if (comboBoxProduto.Items.Count > 0)
+            cmbProduto.DataSource = produtos;
+            cmbProduto.DisplayMember = "nome";
+            cmbProduto.ValueMember = "id_produto";
+            if (cmbProduto.Items.Count > 0)
             {
-                comboBoxProduto.SelectedIndex = 0;
+                cmbProduto.SelectedIndex = 0;
             }
-            comboBoxProduto.SelectedIndexChanged += comboBoxProduto_SelectedIndexChanged;
+            cmbProduto.SelectedIndexChanged += comboBoxProduto_SelectedIndexChanged;
 
             // Limpar DataGridViews
             dgvProdutoSelecionado.Rows.Clear();
@@ -123,29 +123,29 @@ namespace Projeto_Modelo_C_Sharp
 
         private void comboBoxCategoria_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBoxCategoria.SelectedValue == null) return;
+            if (cmbCategoria.SelectedValue == null) return;
 
-            if (int.TryParse(comboBoxCategoria.SelectedValue.ToString(), out int idCategoriaSelecionada))
+            if (int.TryParse(cmbCategoria.SelectedValue.ToString(), out int idCategoriaSelecionada))
             {
                 daoProduto daoProduto = new daoProduto();
                 var produtosFiltrados = daoProduto.SelecionarPorCategoria(idCategoriaSelecionada);
 
-                comboBoxProduto.SelectedIndexChanged -= comboBoxProduto_SelectedIndexChanged;
+                cmbProduto.SelectedIndexChanged -= comboBoxProduto_SelectedIndexChanged;
 
-                comboBoxProduto.DataSource = produtosFiltrados;
-                comboBoxProduto.DisplayMember = "nome";
-                comboBoxProduto.ValueMember = "id_produto";
+                cmbProduto.DataSource = produtosFiltrados;
+                cmbProduto.DisplayMember = "nome";
+                cmbProduto.ValueMember = "id_produto";
 
-                comboBoxProduto.SelectedIndexChanged += comboBoxProduto_SelectedIndexChanged;
+                cmbProduto.SelectedIndexChanged += comboBoxProduto_SelectedIndexChanged;
             }
         }
 
         private void comboBoxProduto_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (comboBoxProduto.SelectedValue == null)
+            if (cmbProduto.SelectedValue == null)
                 return;
 
-            int idProduto = (int)comboBoxProduto.SelectedValue;
+            int idProduto = (int)cmbProduto.SelectedValue;
 
             daoProduto dao = new daoProduto();
             DtoProduto produto = dao.BuscarPorID(idProduto);
@@ -194,7 +194,7 @@ namespace Projeto_Modelo_C_Sharp
             {
                 // 1️⃣ Monta o objeto pedido
                 DtoPedido pedido = new DtoPedido();
-                pedido.id_cliente = (int)comboBoxCliente.SelectedValue;
+                pedido.id_cliente = (int)cmbCliente.SelectedValue;
                 pedido.data = DateTime.Now;
 
                 daoPedido dao = new daoPedido();

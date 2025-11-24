@@ -26,6 +26,28 @@ namespace Projeto_Modelo_C_Sharp
             this.Close();
         }
 
+        private void dgvPesquisa_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Evita erro se clicar no cabeçalho
+            if (e.RowIndex < 0) return;
+
+            // Pega a linha clicada
+            DataGridViewRow linha = dgvPesquisa.Rows[e.RowIndex];
+
+            // Obtém os valores das células
+            string codigo = linha.Cells["id_produto"].Value.ToString();
+            string nome = linha.Cells["nome"].Value.ToString();
+            string categoria = linha.Cells["id_categoria"].Value.ToString();
+            string valor = linha.Cells["preco"].Value.ToString();
+
+            // Abre a tela de edição passando os dados
+            Form_Editar_Produto frmEditar = new Form_Editar_Produto(
+                codigo, nome, categoria, valor
+            );
+
+            frmEditar.ShowDialog();
+        }
+
         private void CarregarGrid()
         {
             daoProduto daoproduto = new daoProduto();

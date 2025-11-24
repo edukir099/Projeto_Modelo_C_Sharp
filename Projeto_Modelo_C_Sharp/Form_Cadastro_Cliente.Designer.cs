@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.lblText = new System.Windows.Forms.Label();
-            this.lblNome_Cliente = new System.Windows.Forms.Label();
-            this.lblEndereco_Cliente = new System.Windows.Forms.Label();
-            this.lblTelefone_Cliente = new System.Windows.Forms.Label();
+            this.lblNomeCliente = new System.Windows.Forms.Label();
+            this.lblEnderecoCliente = new System.Windows.Forms.Label();
+            this.lblTelefoneCliente = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtEndereco = new System.Windows.Forms.TextBox();
             this.txtTelefone = new System.Windows.Forms.TextBox();
@@ -49,35 +49,35 @@
             this.lblText.TabIndex = 0;
             this.lblText.Text = "Cadastro de cliente";
             // 
-            // lblNome_Cliente
+            // lblNomeCliente
             // 
-            this.lblNome_Cliente.AutoSize = true;
-            this.lblNome_Cliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNome_Cliente.Location = new System.Drawing.Point(37, 74);
-            this.lblNome_Cliente.Name = "lblNome_Cliente";
-            this.lblNome_Cliente.Size = new System.Drawing.Size(84, 13);
-            this.lblNome_Cliente.TabIndex = 1;
-            this.lblNome_Cliente.Text = "Nome do cliente";
+            this.lblNomeCliente.AutoSize = true;
+            this.lblNomeCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNomeCliente.Location = new System.Drawing.Point(37, 74);
+            this.lblNomeCliente.Name = "lblNomeCliente";
+            this.lblNomeCliente.Size = new System.Drawing.Size(84, 13);
+            this.lblNomeCliente.TabIndex = 1;
+            this.lblNomeCliente.Text = "Nome do cliente";
             // 
-            // lblEndereco_Cliente
+            // lblEnderecoCliente
             // 
-            this.lblEndereco_Cliente.AutoSize = true;
-            this.lblEndereco_Cliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEndereco_Cliente.Location = new System.Drawing.Point(36, 138);
-            this.lblEndereco_Cliente.Name = "lblEndereco_Cliente";
-            this.lblEndereco_Cliente.Size = new System.Drawing.Size(102, 13);
-            this.lblEndereco_Cliente.TabIndex = 2;
-            this.lblEndereco_Cliente.Text = "Endereço de cliente";
+            this.lblEnderecoCliente.AutoSize = true;
+            this.lblEnderecoCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEnderecoCliente.Location = new System.Drawing.Point(36, 138);
+            this.lblEnderecoCliente.Name = "lblEnderecoCliente";
+            this.lblEnderecoCliente.Size = new System.Drawing.Size(102, 13);
+            this.lblEnderecoCliente.TabIndex = 2;
+            this.lblEnderecoCliente.Text = "Endereço de cliente";
             // 
-            // lblTelefone_Cliente
+            // lblTelefoneCliente
             // 
-            this.lblTelefone_Cliente.AutoSize = true;
-            this.lblTelefone_Cliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTelefone_Cliente.Location = new System.Drawing.Point(36, 200);
-            this.lblTelefone_Cliente.Name = "lblTelefone_Cliente";
-            this.lblTelefone_Cliente.Size = new System.Drawing.Size(98, 13);
-            this.lblTelefone_Cliente.TabIndex = 3;
-            this.lblTelefone_Cliente.Text = "Telefone do cliente";
+            this.lblTelefoneCliente.AutoSize = true;
+            this.lblTelefoneCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTelefoneCliente.Location = new System.Drawing.Point(36, 200);
+            this.lblTelefoneCliente.Name = "lblTelefoneCliente";
+            this.lblTelefoneCliente.Size = new System.Drawing.Size(98, 13);
+            this.lblTelefoneCliente.TabIndex = 3;
+            this.lblTelefoneCliente.Text = "Telefone do cliente";
             // 
             // txtNome
             // 
@@ -132,9 +132,9 @@
             this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.txtEndereco);
             this.Controls.Add(this.txtNome);
-            this.Controls.Add(this.lblTelefone_Cliente);
-            this.Controls.Add(this.lblEndereco_Cliente);
-            this.Controls.Add(this.lblNome_Cliente);
+            this.Controls.Add(this.lblTelefoneCliente);
+            this.Controls.Add(this.lblEnderecoCliente);
+            this.Controls.Add(this.lblNomeCliente);
             this.Controls.Add(this.lblText);
             this.Name = "Form_Cadastro_Cliente";
             this.Text = "Form_Cadastro_Cliente";
@@ -146,9 +146,9 @@
         #endregion
 
         private System.Windows.Forms.Label lblText;
-        private System.Windows.Forms.Label lblNome_Cliente;
-        private System.Windows.Forms.Label lblEndereco_Cliente;
-        private System.Windows.Forms.Label lblTelefone_Cliente;
+        private System.Windows.Forms.Label lblNomeCliente;
+        private System.Windows.Forms.Label lblEnderecoCliente;
+        private System.Windows.Forms.Label lblTelefoneCliente;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtEndereco;
         private System.Windows.Forms.TextBox txtTelefone;

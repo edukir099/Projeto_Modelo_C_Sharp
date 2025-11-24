@@ -31,15 +31,15 @@
             this.lblAviso1 = new System.Windows.Forms.Label();
             this.btnVoltar = new System.Windows.Forms.Button();
             this.dgvPesquisa = new System.Windows.Forms.DataGridView();
+            this.id_produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.id_categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.preco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.rdoOrdenarNome = new System.Windows.Forms.RadioButton();
             this.btnFinalizar = new System.Windows.Forms.Button();
             this.txtNomeUsuario = new System.Windows.Forms.TextBox();
             this.lblNomePedido = new System.Windows.Forms.Label();
             this.lblText = new System.Windows.Forms.Label();
-            this.id_produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.id_categoria = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.preco = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisa)).BeginInit();
             this.SuspendLayout();
             // 
@@ -81,6 +81,31 @@
             this.dgvPesquisa.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
             this.dgvPesquisa.Size = new System.Drawing.Size(504, 235);
             this.dgvPesquisa.TabIndex = 35;
+            this.dgvPesquisa.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPesquisa_CellDoubleClick);
+            // 
+            // id_produto
+            // 
+            this.id_produto.HeaderText = "Código do produto";
+            this.id_produto.Name = "id_produto";
+            this.id_produto.Width = 115;
+            // 
+            // nome
+            // 
+            this.nome.HeaderText = "Nome do produto";
+            this.nome.Name = "nome";
+            this.nome.Width = 116;
+            // 
+            // id_categoria
+            // 
+            this.id_categoria.HeaderText = "Categoria";
+            this.id_categoria.Name = "id_categoria";
+            this.id_categoria.Width = 115;
+            // 
+            // preco
+            // 
+            this.preco.HeaderText = "Valor da unidade";
+            this.preco.Name = "preco";
+            this.preco.Width = 115;
             // 
             // rdoOrdenarNome
             // 
@@ -127,30 +152,6 @@
             this.lblText.Size = new System.Drawing.Size(180, 24);
             this.lblText.TabIndex = 29;
             this.lblText.Text = "Consulta do produto";
-            // 
-            // id_produto
-            // 
-            this.id_produto.HeaderText = "Código do produto";
-            this.id_produto.Name = "id_produto";
-            this.id_produto.Width = 115;
-            // 
-            // nome
-            // 
-            this.nome.HeaderText = "Nome do produto";
-            this.nome.Name = "nome";
-            this.nome.Width = 116;
-            // 
-            // id_categoria
-            // 
-            this.id_categoria.HeaderText = "Categoria";
-            this.id_categoria.Name = "id_categoria";
-            this.id_categoria.Width = 115;
-            // 
-            // preco
-            // 
-            this.preco.HeaderText = "Valor da unidade";
-            this.preco.Name = "preco";
-            this.preco.Width = 115;
             // 
             // Form_Consulta_Produto
             // 

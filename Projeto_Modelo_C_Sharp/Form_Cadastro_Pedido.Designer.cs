@@ -49,10 +49,10 @@
             this.lblNome_produto = new System.Windows.Forms.Label();
             this.lblCodigo_produto = new System.Windows.Forms.Label();
             this.lblAviso2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBoxCliente = new System.Windows.Forms.ComboBox();
-            this.comboBoxCategoria = new System.Windows.Forms.ComboBox();
-            this.comboBoxProduto = new System.Windows.Forms.ComboBox();
+            this.lblCliente = new System.Windows.Forms.Label();
+            this.cmbCliente = new System.Windows.Forms.ComboBox();
+            this.cmbCategoria = new System.Windows.Forms.ComboBox();
+            this.cmbProduto = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProdutosPedido)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProdutoSelecionado)).BeginInit();
             this.SuspendLayout();
@@ -257,52 +257,52 @@
             this.lblAviso2.TabIndex = 30;
             this.lblAviso2.Text = "* Double click para remover pedido";
             // 
-            // label1
+            // lblCliente
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(21, 49);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 13);
-            this.label1.TabIndex = 31;
-            this.label1.Text = "Cliente";
+            this.lblCliente.AutoSize = true;
+            this.lblCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCliente.Location = new System.Drawing.Point(21, 49);
+            this.lblCliente.Name = "lblCliente";
+            this.lblCliente.Size = new System.Drawing.Size(39, 13);
+            this.lblCliente.TabIndex = 31;
+            this.lblCliente.Text = "Cliente";
             // 
-            // comboBoxCliente
+            // cmbCliente
             // 
-            this.comboBoxCliente.FormattingEnabled = true;
-            this.comboBoxCliente.Location = new System.Drawing.Point(24, 65);
-            this.comboBoxCliente.Name = "comboBoxCliente";
-            this.comboBoxCliente.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxCliente.TabIndex = 32;
-            this.comboBoxCliente.SelectedIndexChanged += new System.EventHandler(this.comboBoxCliente_SelectedIndexChanged);
+            this.cmbCliente.FormattingEnabled = true;
+            this.cmbCliente.Location = new System.Drawing.Point(24, 65);
+            this.cmbCliente.Name = "cmbCliente";
+            this.cmbCliente.Size = new System.Drawing.Size(121, 21);
+            this.cmbCliente.TabIndex = 32;
+            this.cmbCliente.SelectedIndexChanged += new System.EventHandler(this.comboBoxCliente_SelectedIndexChanged);
             // 
-            // comboBoxCategoria
+            // cmbCategoria
             // 
-            this.comboBoxCategoria.FormattingEnabled = true;
-            this.comboBoxCategoria.Location = new System.Drawing.Point(230, 125);
-            this.comboBoxCategoria.Name = "comboBoxCategoria";
-            this.comboBoxCategoria.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxCategoria.TabIndex = 33;
-            this.comboBoxCategoria.SelectedIndexChanged += new System.EventHandler(this.comboBoxCategoria_SelectedIndexChanged);
+            this.cmbCategoria.FormattingEnabled = true;
+            this.cmbCategoria.Location = new System.Drawing.Point(230, 125);
+            this.cmbCategoria.Name = "cmbCategoria";
+            this.cmbCategoria.Size = new System.Drawing.Size(121, 21);
+            this.cmbCategoria.TabIndex = 33;
+            this.cmbCategoria.SelectedIndexChanged += new System.EventHandler(this.comboBoxCategoria_SelectedIndexChanged);
             // 
-            // comboBoxProduto
+            // cmbProduto
             // 
-            this.comboBoxProduto.FormattingEnabled = true;
-            this.comboBoxProduto.Location = new System.Drawing.Point(430, 125);
-            this.comboBoxProduto.Name = "comboBoxProduto";
-            this.comboBoxProduto.Size = new System.Drawing.Size(121, 21);
-            this.comboBoxProduto.TabIndex = 34;
-            this.comboBoxProduto.SelectedIndexChanged += new System.EventHandler(this.comboBoxProduto_SelectedIndexChanged);
+            this.cmbProduto.FormattingEnabled = true;
+            this.cmbProduto.Location = new System.Drawing.Point(430, 125);
+            this.cmbProduto.Name = "cmbProduto";
+            this.cmbProduto.Size = new System.Drawing.Size(121, 21);
+            this.cmbProduto.TabIndex = 34;
+            this.cmbProduto.SelectedIndexChanged += new System.EventHandler(this.comboBoxProduto_SelectedIndexChanged);
             // 
             // Form_Cadastro_Pedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(589, 648);
-            this.Controls.Add(this.comboBoxProduto);
-            this.Controls.Add(this.comboBoxCategoria);
-            this.Controls.Add(this.comboBoxCliente);
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.cmbProduto);
+            this.Controls.Add(this.cmbCategoria);
+            this.Controls.Add(this.cmbCliente);
+            this.Controls.Add(this.lblCliente);
             this.Controls.Add(this.lblAviso2);
             this.Controls.Add(this.lblCodigo_produto);
             this.Controls.Add(this.lblNome_produto);
@@ -341,10 +341,10 @@
         private System.Windows.Forms.Label lblNome_produto;
         private System.Windows.Forms.Label lblCodigo_produto;
         private System.Windows.Forms.Label lblAviso2;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBoxCliente;
-        private System.Windows.Forms.ComboBox comboBoxCategoria;
-        private System.Windows.Forms.ComboBox comboBoxProduto;
+        private System.Windows.Forms.Label lblCliente;
+        private System.Windows.Forms.ComboBox cmbCliente;
+        private System.Windows.Forms.ComboBox cmbCategoria;
+        private System.Windows.Forms.ComboBox cmbProduto;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNomePed;
         private System.Windows.Forms.DataGridViewTextBoxColumn colQtdPed;
         private System.Windows.Forms.DataGridViewTextBoxColumn colValorPed;
