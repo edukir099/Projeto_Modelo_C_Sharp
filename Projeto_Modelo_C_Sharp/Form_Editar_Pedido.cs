@@ -56,21 +56,21 @@ namespace Projeto_Modelo_C_Sharp
 
             // Carregar clientes
             var clientes = daoCliente.Select_Geral();
-            comboBoxCliente.DataSource = clientes;
-            comboBoxCliente.DisplayMember = "nome";
-            comboBoxCliente.ValueMember = "id_cliente";
+            cmbCliente.DataSource = clientes;
+            cmbCliente.DisplayMember = "nome";
+            cmbCliente.ValueMember = "id_cliente";
 
             // Carregar categorias
             var categorias = new daoCategoria().Select_Geral();
-            comboBoxCategoria.DataSource = categorias;
-            comboBoxCategoria.DisplayMember = "nome";
-            comboBoxCategoria.ValueMember = "id_categoria";
+            cmbCategoria.DataSource = categorias;
+            cmbCategoria.DisplayMember = "nome";
+            cmbCategoria.ValueMember = "id_categoria";
 
             // Carregar produtos
             var produtos = daoProduto.Select_Geral();
-            comboBoxProduto.DataSource = produtos;
-            comboBoxProduto.DisplayMember = "nome";
-            comboBoxProduto.ValueMember = "id_produto";
+            cmbProduto.DataSource = produtos;
+            cmbProduto.DisplayMember = "nome";
+            cmbProduto.ValueMember = "id_produto";
 
             // Carregar pedido existente
             CarregarPedido();
@@ -81,7 +81,7 @@ namespace Projeto_Modelo_C_Sharp
             var pedido = daoPedido.BuscarPorID(idPedido);
             if (pedido != null)
             {
-                comboBoxCliente.SelectedValue = pedido.id_cliente;
+                cmbCliente.SelectedValue = pedido.id_cliente;
 
                 dgvProdutosPedido.Rows.Clear();
                 foreach (var item in pedido.itens)
@@ -108,7 +108,7 @@ namespace Projeto_Modelo_C_Sharp
                     using (MySqlCommand cmd = new MySqlCommand(
                         "UPDATE Pedido SET id_cliente=@idCliente, data=@data WHERE id_pedido=@idPedido", cn))
                     {
-                        cmd.Parameters.AddWithValue("@idCliente", comboBoxCliente.SelectedValue);
+                        cmd.Parameters.AddWithValue("@idCliente", cmbCliente.SelectedValue);
                         cmd.Parameters.AddWithValue("@data", DateTime.Now);
                         cmd.Parameters.AddWithValue("@idPedido", idPedido);
                         cmd.ExecuteNonQuery();
@@ -145,6 +145,18 @@ namespace Projeto_Modelo_C_Sharp
             {
                 MessageBox.Show("Erro ao atualizar pedido: " + ex.Message);
             }
+        }
+        public Form_Editar_Pedido(string codigo, string nome, string categoria, string total)
+        {
+            InitializeComponent();
+
+            cmbCliente.Text = nome;
+            txtTotal.Text = total;
+        }
+
+        private void btnVoltar_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

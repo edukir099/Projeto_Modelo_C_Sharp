@@ -20,6 +20,28 @@ namespace Projeto_Modelo_C_Sharp
             this.Close();
         }
 
+        private void dgvPesquisa_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
+        {
+            // Evita erro se clicar no cabeçalho
+            if (e.RowIndex < 0) return;
+
+            // Pega a linha clicada
+            DataGridViewRow linha = dgvPesquisa.Rows[e.RowIndex];
+
+            // Obtém os valores das células
+            string codigo = linha.Cells["id_produto"].Value.ToString();
+            string nome = linha.Cells["nome_cliente"].Value.ToString();
+            string data = linha.Cells["data"].Value.ToString();
+            string total = linha.Cells["total"].Value.ToString();
+
+            // Abre a tela de edição passando os dados
+            Form_Editar_Pedido frmEditar = new Form_Editar_Pedido(
+                codigo, nome, data, total
+            );
+
+            frmEditar.ShowDialog();
+        }
+
         private void CarregarGrid()
         {
             daoPedido daopedido = new daoPedido();

@@ -44,15 +44,15 @@
             this.Valor_total = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lblReferencia = new System.Windows.Forms.Label();
             this.lblMarca = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtTotal = new System.Windows.Forms.TextBox();
             this.lblValorTotal = new System.Windows.Forms.Label();
             this.btnVoltar = new System.Windows.Forms.Button();
-            this.btnCadastrar = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
             this.lblText = new System.Windows.Forms.Label();
             this.lblCliente = new System.Windows.Forms.Label();
-            this.comboBoxCliente = new System.Windows.Forms.ComboBox();
-            this.comboBoxCategoria = new System.Windows.Forms.ComboBox();
-            this.comboBoxProduto = new System.Windows.Forms.ComboBox();
+            this.cmbCliente = new System.Windows.Forms.ComboBox();
+            this.cmbCategoria = new System.Windows.Forms.ComboBox();
+            this.cmbProduto = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProdutoSelecionado)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProdutosPedido)).BeginInit();
             this.SuspendLayout();
@@ -188,13 +188,13 @@
             this.lblMarca.TabIndex = 36;
             this.lblMarca.Text = "Categoria";
             // 
-            // textBox1
+            // txtTotal
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Location = new System.Drawing.Point(26, 119);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(152, 20);
-            this.textBox1.TabIndex = 35;
+            this.txtTotal.Enabled = false;
+            this.txtTotal.Location = new System.Drawing.Point(26, 119);
+            this.txtTotal.Name = "txtTotal";
+            this.txtTotal.Size = new System.Drawing.Size(152, 20);
+            this.txtTotal.TabIndex = 35;
             // 
             // lblValorTotal
             // 
@@ -216,15 +216,16 @@
             this.btnVoltar.Text = "Voltar";
             this.btnVoltar.UseVisualStyleBackColor = true;
             // 
-            // btnCadastrar
+            // btnSalvar
             // 
-            this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrar.Location = new System.Drawing.Point(443, 584);
-            this.btnCadastrar.Name = "btnCadastrar";
-            this.btnCadastrar.Size = new System.Drawing.Size(118, 49);
-            this.btnCadastrar.TabIndex = 32;
-            this.btnCadastrar.Text = "Salvar";
-            this.btnCadastrar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.Location = new System.Drawing.Point(443, 584);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(118, 49);
+            this.btnSalvar.TabIndex = 32;
+            this.btnSalvar.Text = "Salvar";
+            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // lblText
             // 
@@ -246,38 +247,38 @@
             this.lblCliente.TabIndex = 46;
             this.lblCliente.Text = "Cliente";
             // 
-            // comboBoxCliente
+            // cmbCliente
             // 
-            this.comboBoxCliente.FormattingEnabled = true;
-            this.comboBoxCliente.Location = new System.Drawing.Point(26, 67);
-            this.comboBoxCliente.Name = "comboBoxCliente";
-            this.comboBoxCliente.Size = new System.Drawing.Size(138, 21);
-            this.comboBoxCliente.TabIndex = 47;
+            this.cmbCliente.FormattingEnabled = true;
+            this.cmbCliente.Location = new System.Drawing.Point(26, 67);
+            this.cmbCliente.Name = "cmbCliente";
+            this.cmbCliente.Size = new System.Drawing.Size(138, 21);
+            this.cmbCliente.TabIndex = 47;
             // 
-            // comboBoxCategoria
+            // cmbCategoria
             // 
-            this.comboBoxCategoria.FormattingEnabled = true;
-            this.comboBoxCategoria.Location = new System.Drawing.Point(232, 119);
-            this.comboBoxCategoria.Name = "comboBoxCategoria";
-            this.comboBoxCategoria.Size = new System.Drawing.Size(138, 21);
-            this.comboBoxCategoria.TabIndex = 48;
+            this.cmbCategoria.FormattingEnabled = true;
+            this.cmbCategoria.Location = new System.Drawing.Point(232, 119);
+            this.cmbCategoria.Name = "cmbCategoria";
+            this.cmbCategoria.Size = new System.Drawing.Size(138, 21);
+            this.cmbCategoria.TabIndex = 48;
             // 
-            // comboBoxProduto
+            // cmbProduto
             // 
-            this.comboBoxProduto.FormattingEnabled = true;
-            this.comboBoxProduto.Location = new System.Drawing.Point(432, 119);
-            this.comboBoxProduto.Name = "comboBoxProduto";
-            this.comboBoxProduto.Size = new System.Drawing.Size(138, 21);
-            this.comboBoxProduto.TabIndex = 49;
+            this.cmbProduto.FormattingEnabled = true;
+            this.cmbProduto.Location = new System.Drawing.Point(432, 119);
+            this.cmbProduto.Name = "cmbProduto";
+            this.cmbProduto.Size = new System.Drawing.Size(138, 21);
+            this.cmbProduto.TabIndex = 49;
             // 
             // Form_Editar_Pedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(590, 644);
-            this.Controls.Add(this.comboBoxProduto);
-            this.Controls.Add(this.comboBoxCategoria);
-            this.Controls.Add(this.comboBoxCliente);
+            this.Controls.Add(this.cmbProduto);
+            this.Controls.Add(this.cmbCategoria);
+            this.Controls.Add(this.cmbCliente);
             this.Controls.Add(this.lblCliente);
             this.Controls.Add(this.lblAviso2);
             this.Controls.Add(this.lblCodigo_produto);
@@ -287,10 +288,10 @@
             this.Controls.Add(this.dgvProdutosPedido);
             this.Controls.Add(this.lblReferencia);
             this.Controls.Add(this.lblMarca);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtTotal);
             this.Controls.Add(this.lblValorTotal);
             this.Controls.Add(this.btnVoltar);
-            this.Controls.Add(this.btnCadastrar);
+            this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.lblText);
             this.Name = "Form_Editar_Pedido";
             this.Text = "Form_Editar_Pedido";
@@ -319,14 +320,14 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Valor_total;
         private System.Windows.Forms.Label lblReferencia;
         private System.Windows.Forms.Label lblMarca;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtTotal;
         private System.Windows.Forms.Label lblValorTotal;
         private System.Windows.Forms.Button btnVoltar;
-        private System.Windows.Forms.Button btnCadastrar;
+        private System.Windows.Forms.Button btnSalvar;
         private System.Windows.Forms.Label lblText;
         private System.Windows.Forms.Label lblCliente;
-        private System.Windows.Forms.ComboBox comboBoxCliente;
-        private System.Windows.Forms.ComboBox comboBoxCategoria;
-        private System.Windows.Forms.ComboBox comboBoxProduto;
+        private System.Windows.Forms.ComboBox cmbCliente;
+        private System.Windows.Forms.ComboBox cmbCategoria;
+        private System.Windows.Forms.ComboBox cmbProduto;
     }
 }
